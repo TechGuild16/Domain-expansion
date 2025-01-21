@@ -44,12 +44,13 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
 
+}
 .App {
-  background-color: var(--primaryColor);
+
   min-height: 100vh;
 }
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
@@ -88,7 +89,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 .App {
-  background-color: var(--primaryColor);
+  background-color: rgb(13, 13, 13);
   min-height: 100vh;
 }
 code {

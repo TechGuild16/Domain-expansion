@@ -1,16 +1,25 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min.js"; // Import Bootstrap JS
 import "./Navbar.css";
-
-const Navbar = ({ brandName, brandLink, navLinks, customClass }) => {
+import domainexpansionlogo from '../../../Assets/domainExpansionLogo.svg'
+const Navbar = ({ brandName, brandLink, customClass }) => {
   const location = useLocation();
 
   const isActive = (path) => {
-    if (location.pathname === path && location.pathname !== brandLink) {
-      return "active";
-    }
-    return "";
+    return location.pathname === path && location.pathname !== brandLink
+      ? "active"
+      : "";
   };
+
+  const navLinks = [
+    { path: "/Solutions", label: "SOLUTIONS", className: "solutions" },
+    { path: "/Portfolio", label: "PORTFOLIO", className: "portfolio" },
+    { path: "/About", label: "ABOUT", className: "about" },
+    { path: "/Blogs", label: "BLOGS", className: "blogs" },
+    { path: "/ContactUs", label: "CONTACT US", className: "projects" },
+  ];
 
   return (
     <div className={`container-fluid pt-3 sticky-top ${customClass}`}>
@@ -33,23 +42,55 @@ const Navbar = ({ brandName, brandLink, navLinks, customClass }) => {
 
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav ms-auto">
-            {navLinks.map((link) => (
-              <li className="nav-item" key={link.path}>
-                <Link
-                  className={`nav-link navbar-link ${link.className} ${isActive(
-                    link.path
-                  )}`}
-                  to={link.path}
-                >
-                  <span>{link.label}</span>
-                </Link>
-              </li>
-            ))}
-            <li className="nav-item">
-              <Link className="nav-link" to="/contact">
-                <span className="getStarted">GET STARTED</span>
-              </Link>
-            </li>
+            {navLinks.map((link) =>
+              link.label === "SOLUTIONS" ? (
+                <li className="nav-item dropdown" key={link.path}>
+                  <a
+                    className={`nav-link dropdown-toggle ${link.className}`}
+                    href="#"
+                    id="solutionsDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    {link.label}
+                  </a>
+                  <ul className="dropdown-menu" aria-labelledby="solutionsDropdown">
+                    <li>
+                      <Link className="dropdown-item" to="/branding">
+                        Branding
+                      </Link>
+                    </li>
+                    <li>
+                      <Link className="dropdown-item" to="/web-app-development">
+                        Web/App Development
+                      </Link>
+                    </li>
+                    <li>
+                      <Link className="dropdown-item" to="/digital-marketing">
+                        Digital Marketing
+                      </Link>
+                    </li>
+                    <li>
+                      <Link className="dropdown-item" to="/creative-designing">
+                        Creative Designing
+                      </Link>
+                    </li>
+                  </ul>
+                </li>
+              ) : (
+                <li className="nav-item" key={link.path}>
+                  <Link
+                    className={`nav-link navbar-link ${link.className} ${isActive(
+                      link.path
+                    )}`}
+                    to={link.path}
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              )
+            )}
           </ul>
         </div>
       </nav>

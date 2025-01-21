@@ -11,15 +11,11 @@ import ContactUs from "./pages/ContactUs/ContactUs.jsx";
 import Home from "./pages/Home/Home.jsx";
 import Portfolio from "./pages/Portfolio/Portfolio.jsx";
 import Solutions from "./pages/Solutions/Solutions.jsx";
+import Branding from "./pages/branding/Branding.jsx";
+import WebAppDev from "./pages/WebAppDevelopment/WebAppDev.jsx";
 function App() {
   // Now navbar is an reusable component u can send link according to your need
-  const navLinks = [
-    { path: "/Solutions", label: "SOLUTIONS", className: "solutions" },
-    { path: "/Portfolio", label: "PORTFOLIO", className: "portfolio" },
-    { path: "/About", label: "ABOUT", className: "about" },
-    { path: "/Blogs", label: "BLOGS", className: "blogs" },
-    { path: "/ContactUs", label: "CONTACT US", className: "projects" },
-  ];
+
   return (
     <div className="App">
       <BrowserRouter>
@@ -27,7 +23,6 @@ function App() {
         <Navbar
           brandName="Domain Expansion"
           brandLink="/"
-          navLinks={navLinks}
           customClass="my-custom-navbar"
         />
         <Routes>
@@ -37,6 +32,8 @@ function App() {
           <Route path="/About" element={<About />} />
           <Route path="/Blogs" element={<Blog />} />
           <Route path="/ContactUs" element={<ContactUs />} />
+          <Route path="/branding" element={<Branding />} />
+          <Route path="/web-app-development" element={<WebAppDev />} />
         </Routes>
         <Footer />
       </BrowserRouter>

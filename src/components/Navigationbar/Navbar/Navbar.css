@@ -32,8 +32,8 @@
 
 /* Navbar Container */
 .simple-navbar {
-  background-color: blue;
-  box-shadow: 0 2px 5px rgba(82, 135, 214, 0.75);
+ background-color: #151515;
+ color: white;
   padding: 10px 0px;
   border-radius: 15px;
   height: 12vh;
@@ -44,40 +44,28 @@
 .simple-brand {
   font-size: 1.5rem;
   padding-left: 1.2vw;
-  color: #f3dfd8;
+  color: #fff;
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 1px;
   text-decoration: none;
 }
 
-.simple-brand:hover {
-  color: #ffffff;
-}
-
-.nav-item span {
-  font-size: 0.9rem;
-  font-weight: 500;
-  padding: 1vw;
-  background-color: var(--textColor);
-  color: var(--navbarLinksColor);
-  border-radius: 0.5vw;
-}
-
 .navbar-link.active span {
   background-color: var(--color);
-  color: var(--secondaryHoverColor);
+  color: white;
   font-weight: 500;
 }
 
 .navbar-link:hover span {
   background-color: var(--navbarLinks);
-  color: var(--secondaryHoverColor);
+  color: white;
 }
+c
 
 .getStarted {
   background-color: var(--color) !important;
-  color: #000 !important;
+  color: #fff !important;
 }
 .navbar-collapse {
   background-color: var(blue);
@@ -88,4 +76,20 @@
 
 .navbar-toggler .navbar-toggler-icon {
   color: #fff;
+}
+.dropdown-menu{
+  background-color: #dad4ec;
+  border: none;
+  color: white;
+}
+.nav-link{
+  color: white;
+}
+.domainlogo{
+  width: 25vw;
+}
+@media screen and (max-width: 600px){
+  .simple-brand {
+      font-size: 1.2rem !important;
+  }
 }
