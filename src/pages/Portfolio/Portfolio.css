@@ -1,0 +1,16 @@
+.backgroundColor {
+  background-color: var(--navbarColor);
+}
+.backgroundColor:hover {
+  background-color: var(--btnBackground);
+}
+
+.form-control::placeholder {
+  text-align: center;
+  padding: 4px;
+  padding-top: 4px;
+}
+
+.showcaseBtn {
+  width: 20vw;
+}

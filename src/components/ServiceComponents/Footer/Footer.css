@@ -1,0 +1,244 @@
+.FooterSection {
+  min-height: 100vh;
+  padding: 2vw;
+}
+.footerHeading {
+  width: 96vw;
+  height: 36.3vh;
+  border-radius: 12px;
+  background-color: blue;
+  padding: 2.5vw;
+  color: white;
+}
+.footerHeading h3 {
+  font-size: 2.5vw;
+  width: 61.2vw;
+}
+.footerHeading p {
+  width: 61.2vw;
+}
+.footerButton {
+  width: 14vw;
+  height: 7vh;
+  border: none;
+  background-color: rgb(116, 83, 179);
+  color: white;
+  border-radius: 7px;
+}
+.footerButton img {
+  width: 2vw;
+}
+.footermarquee {
+  background-color: blue;
+  border-radius: 12px;
+  margin-top: 1vw;
+}
+.footerContainerFirst {
+  min-height: 64.26vh;
+}
+.footerLinks {
+  min-height: 32vh;
+  width: 22.5vw;
+  border-radius: 12px;
+  background-color: blue;
+}
+.footerLinksPart2 {
+  min-height: 31.3vh;
+  background-color: blue;
+  border-radius: 12px;
+}
+.footerLinksPart3 {
+  min-height: 16.85vh;
+  background-color: blue;
+  border-radius: 12px;
+  padding-right: 2vw;
+}
+.footerLinksPart4 {
+  min-height: 11.76vh;
+  background-color: blue;
+  border-radius: 12px;
+  padding: 0vw 2vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.footerCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+.upperPart {
+  padding: 1vw;
+}
+.upperPart img {
+  width: 3vw;
+}
+.upperPart :nth-child(2) {
+  width: 3vw;
+}
+.details {
+  padding: 1vw;
+}
+.details h4 {
+  color: white;
+  font-weight: 400;
+}
+.details p {
+  color: var(--paraText);
+}
+.footerLinksShowcase {
+  height: 100%;
+  padding: 2vw;
+}
+.footerLinkStructure h4 {
+  color: white;
+  font-size: 1.5vw;
+}
+.footerLinkStructure :nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.footerLinkStructure :nth-child(2) * {
+  text-decoration: none;
+  color: var(--paraText);
+  font-size: 1.1vw;
+}
+.banner {
+  position: relative;
+}
+.soonBaner {
+  position: absolute;
+  right: 1vw;
+  top: 50%;
+  transform: translate(0, -50%);
+  background-color: #2c2c2c;
+  padding: 0.2vw 1vw;
+  border-radius: 5px;
+}
+.soonBaner2 {
+  position: absolute;
+  right: -2vw;
+  top: 50%;
+  transform: translate(0, -50%);
+  background-color: #2c2c2c;
+  padding: 0.2vw 1vw;
+  border-radius: 5px;
+}
+.newsletter {
+  display: flex;
+  flex-direction: column;
+  padding: 1vw;
+}
+.newsletter p {
+  color: var(--paraText);
+}
+.newsletter h4 {
+  color: white;
+  font-weight: 400;
+  font-size: 1.5vw;
+}
+.FooterEmail input {
+  background-color: var(--navbarColor);
+  border: none;
+  border-bottom: 1px solid var(--paraText);
+  outline: none;
+  color: white;
+}
+.FooterEmail img {
+  width: 3vw;
+}
+.footerLinksPart4 :nth-child(1) p {
+  color: var(--paraText);
+}
+@media (max-width: 576px) {
+  .footerHeading {
+    width: 89vw;
+    height: 52vh;
+    flex-direction: column;
+  }
+  .FooterSection {
+    padding: 9vw 6vw;
+  }
+  .footerHeading h3 {
+    font-size: 8.5vw;
+  }
+  .footerHeading p {
+    width: 76.2vw;
+    padding-left: 6vw;
+  }
+  .footerHeading h3 {
+    width: 92.2vw;
+    line-height: 1;
+    padding-left: 6vw;
+  }
+  .footerButton img {
+    width: 8vw;
+  }
+  .footerLinks {
+    width: 88.5vw;
+  }
+  .footermarquee {
+    margin-top: 4vw;
+  }
+  .upperPart img {
+    width: 16vw;
+  }
+  .upperPart :nth-child(2) {
+    width: 16vw;
+  }
+  .upperPart {
+    padding: 5vw;
+  }
+  .footerLinkStructure :nth-child(2) * {
+    font-size: 3.1vw;
+  }
+  .footerLinkStructure h4 {
+    font-size: 6.5vw;
+  }
+  .footerLinkStructure {
+    margin-top: 5vw;
+  }
+  footerContainerSecond {
+    margin-top: 5vw;
+  }
+  .footerLinksPart2 {
+    padding-bottom: 3vw;
+  }
+  .footerLinksPart3 :nth-child(1) {
+    flex-direction: column;
+    align-items: unset;
+  }
+  .newsletter p {
+    color: var(--paraText);
+    font-size: 7vw;
+  }
+  .newsletter h4 {
+    font-size: 3.5vw;
+    margin-top: -2vw;
+  }
+  .footerLinksPart3 {
+    min-height: 20.85vh;
+  }
+  .FooterEmail img {
+    width: 11vw;
+  }
+  .footerLinksPart4 :nth-child(1) {
+    flex-direction: column;
+  }
+  .footerLinksPart4 {
+    padding: 4vw 7vw;
+  }
+  .FooterEmail input {
+    width: 83%;
+  }
+  .footerButton {
+    width: 50vw;
+    height: 7vh;
+    border: none;
+    background-color: var(--navbarLinks);
+    color: white;
+    border-radius: 7px;
+  }
+}

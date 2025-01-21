@@ -1,0 +1,79 @@
+.homeContainer{
+    min-height: 100vh;
+    padding-top: 2vw;
+    padding-left: 1.2vw;
+}
+.AboutTechGuild{
+    background-color: var(--successSectionLabelColor);
+    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+    height: 11.76vh;
+    text-align: center;
+}
+.callToActionHome{
+    width: 95%;
+    position: absolute;
+    bottom: 0%;
+}
+.AboutTechGuild :nth-child(1) h5{
+    color: var(--servicesText);
+    font-weight: 400;
+    font-size: 1.2vw;
+}
+.AboutTechGuild :nth-child(1) p{
+    color: var(--paraText);
+    margin-top: -.5vw;
+    font-size: 1vw;
+}
+.sassButton{
+    position: absolute;
+    top: -2%;
+    right: -1%;
+    background-color: var(--navbarLinks);
+    border-radius: 50%;
+    display: flex;
+    width: 13.5vh;
+    height: 13.5vh;
+    align-items: center;
+    justify-content: center;
+}
+.sassimg{
+    width: 4.3vw;
+    padding-right: .5vw;
+}
+.footermarquee2{
+    background-color: var(--navbarColor);
+    border-radius: 12px;
+    margin-top: 1vw;
+    margin-right: 1vw;
+}
+
+
+@media (max-width: 576px){
+    .homeContainer {
+        padding-left: 3.2vw;
+        padding-right: 4vw;
+    }
+    .firstServiceContainer {
+        padding-left: 5vw;
+    }
+    .homeContainer {
+        padding-top: 4vw;
+    }
+    .heading h1 {
+        font-size: 34px;
+    }
+    .headingtwo h1 {
+        font-size: 34px;
+    }
+    .AboutTechGuild :nth-child(1) h5 {
+        font-size: 6.2vw;
+    }
+    .AboutTechGuild :nth-child(1) p {
+        font-size: 4vw;
+    }
+    .sassimg {
+        width: 16.3vw;
+        padding-right: .5vw;
+    }
+}

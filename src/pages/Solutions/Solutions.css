@@ -1,0 +1,201 @@
+:root {
+  --navbarColor: #1a1a1a;
+  --navbarLinks: #0f0f0f;
+  --navbarLinksColor: #81807e;
+  --secondaryColor: #ce7d63;
+  --secondaryHoverColor: #ffaf94;
+  --careersText: #f9efec;
+  --paraText: #676665;
+}
+
+.career-container {
+  width: 100vw;
+  padding-top: 2vw;
+  padding-left: 1.2vw;
+}
+
+.firstcareerContainer {
+  background-color: var(--navbarColor);
+  border-radius: 0.5vw;
+  padding-top: 3vw;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  min-height: 57.31vh;
+  position: relative;
+}
+
+.firstcareerContainer h1 {
+  font-size: 4vw;
+}
+
+.secondcareerContainer {
+  background-color: var(--navbarColor);
+  margin-left: 1vw;
+  width: 31vw;
+  border-radius: 0.5vw;
+  position: relative;
+  color: var(--careersText);
+}
+
+.secondcareerContainer .heading {
+  font-size: 1.56vw;
+  font-weight: 210;
+  line-height: 4.17vh;
+  text-align: left;
+  margin-left: 2px;
+  margin-top: 3px;
+}
+
+.secondcareerContainer .paragraph {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.6;
+  border-radius: 24px solid var(--navbarColor);
+  padding-top: 1vw;
+  width: 84.56%;
+  color: var(--paraText);
+}
+
+/* For tablets and laptops */
+@media (min-width: 576px) {
+  .secondcareerContainer .paragraph {
+    font-size: 1.2rem;
+    line-height: 1.8;
+  }
+}
+
+/* For desktops */
+@media (min-width: 992px) {
+  .secondcareerContainer .paragraph {
+    font-size: 1.5rem;
+    line-height: 2;
+  }
+}
+
+/* For large desktops and bigger screens */
+@media (min-width: 1200px) {
+  .secondcareerContainer .paragraph {
+    font-size: 1.7rem;
+    line-height: 2.2;
+  }
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.careerTextColor {
+  color: var(--careersText);
+}
+
+/************CTA BUTTON*********/
+.outerarrowcircle img {
+  width: 15vw;
+}
+
+.responsivelogo {
+  display: none;
+}
+
+.callToActioncareer {
+  position: absolute;
+  bottom: 3%;
+  width: 90%;
+  padding-left: 1vw;
+}
+
+.callToActioncareer h3 {
+  color: #fff;
+  font-weight: 400;
+  font-size: 1.3vw;
+}
+
+.callToActioncareer :nth-child(2) h3 {
+  color: #fff;
+  font-weight: 400;
+  font-size: 1.3vw;
+  background-color: #ffffff29;
+  padding: 1vw;
+  border-radius: 23px;
+  backdrop-filter: blur(5px);
+}
+
+/************Responsive********/
+@media (max-width: 991px) {
+  .firstcareerContainer {
+    height: 50vh;
+  }
+
+  .secondcareerContainer {
+    width: 45vw;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .career-container {
+    padding-left: 3vw;
+    padding-right: 4vw;
+    padding-top: 4vw;
+  }
+
+  .firstcareerContainer,
+  .secondcareerContainer {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .secondcareerContainer {
+    margin-top: 1vw;
+  }
+}
+
+@media (max-width: 576px) {
+  .career-container {
+    padding-left: 5vw;
+  }
+
+  .firstcareerContainer {
+    height: 49vh;
+    border-radius: 23px;
+  }
+
+  .secondcareerContainer {
+    height: 50vh;
+    margin-top: 7vw;
+  }
+
+  .secondcareerContainer img {
+    border-radius: 23px;
+  }
+
+  .heading h1 {
+    font-size: 28px;
+    padding-top: 3vw;
+    padding-left: 2vw;
+  }
+
+  .headingtwo h1 {
+    font-size: 28px;
+    padding-left: 2vw;
+  }
+
+  .responsivelogo {
+    display: block;
+  }
+
+  .responsivelogo img {
+    width: 50vw;
+    padding-top: 3vw;
+  }
+
+  .norespcircle {
+    display: none;
+  }
+
+  .paragraph {
+    padding-left: 2vw;
+    padding-top: 3vw;
+    margin-bottom: 4px;
+  }
+}

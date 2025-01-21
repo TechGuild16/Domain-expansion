@@ -1,0 +1,91 @@
+:root {
+  --navbarColor: #1a1a1a;
+  --navbarLinks: #0f0f0f;
+  --navbarLinksColor: #81807e;
+  --secondaryColor: #ce7d63;
+  --secondaryHoverColor: #ffaf94;
+  --servicesText: #f9efec;
+  --paraText: #676665;
+  --successSectionLabelColor: #1f1f1f;
+  --border: #333333;
+  --paragraphText: #b3b3b2;
+  --btnBackground: #1f1f1f;
+  --textColor: #f9efec;
+  --color: #e6e6e6;
+  --testimonilName: #f3dfd8;
+  --aboutNumberColor: #da9e8b;
+
+  --navbarColor: #1a1a1a;
+  --navbarLinks: #0f0f0f;
+  --navbarLinksColor: #81807e;
+  --secondaryColor: #ce7d63;
+  --secondaryHoverColor: #ffaf94;
+  --servicesText: #f9efec;
+  --paraText: #676665;
+  --border: #333333;
+  --paragraphText: #b3b3b2;
+  --btnBackground: #1f1f1f;
+  --textColor: #f9efec;
+  --color: #e6e6e6;
+  --testimonilName: #f3dfd8;
+}
+
+/* Navbar Container */
+.simple-navbar {
+  background-color: blue;
+  box-shadow: 0 2px 5px rgba(82, 135, 214, 0.75);
+  padding: 10px 0px;
+  border-radius: 15px;
+  height: 12vh;
+  max-width: 1820px;
+}
+
+/* Brand Styling */
+.simple-brand {
+  font-size: 1.5rem;
+  padding-left: 1.2vw;
+  color: #f3dfd8;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+
+.simple-brand:hover {
+  color: #ffffff;
+}
+
+.nav-item span {
+  font-size: 0.9rem;
+  font-weight: 500;
+  padding: 1vw;
+  background-color: var(--textColor);
+  color: var(--navbarLinksColor);
+  border-radius: 0.5vw;
+}
+
+.navbar-link.active span {
+  background-color: var(--color);
+  color: var(--secondaryHoverColor);
+  font-weight: 500;
+}
+
+.navbar-link:hover span {
+  background-color: var(--navbarLinks);
+  color: var(--secondaryHoverColor);
+}
+
+.getStarted {
+  background-color: var(--color) !important;
+  color: #000 !important;
+}
+.navbar-collapse {
+  background-color: var(blue);
+}
+.navbar-collapse .navbar-nav {
+  text-align: center;
+}
+
+.navbar-toggler .navbar-toggler-icon {
+  color: #fff;
+}

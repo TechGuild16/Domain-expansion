@@ -1,0 +1,168 @@
+
+
+.OurServiceMainDiv{
+    min-height: 100vh;
+    margin-top: 4vw;
+    border:4px solid var(--navbarColor);
+    margin-right: 1.5vw;
+    border-radius: 23px;
+}
+.OurServiceHeading{
+    background-color: var(--navbarColor);
+    padding: 2vw;
+    border: 5px solid var(--navbarLinks);
+    border-radius: 23px;    
+}
+.OurServiceHeading h1{
+    color: var(--servicesText);
+}
+.structure{
+    padding-top: 1vw;
+    padding-left: 1.5vw;
+    padding-bottom: 1vw;
+}
+.firstStructurediv{
+    border-radius: 1vw;
+    width: 47vw;
+    min-height: 39.17vh;
+    background-color: var(--navbarColor);
+}
+.secondStructurediv{
+    border-radius: 1vw;
+    width: 47vw;
+    min-height: 39.17vh;
+    background-color: var(--navbarColor);
+}
+/****************************************ServiceCard*********************************************/
+.serviceCard{
+    padding: 3vw 1vw;
+}
+.cardimagefix{
+    width: 3.44vw;
+}
+.serviceHeading :nth-child(1) h3{
+    color: #fff;
+    font-weight: 400;
+    font-size: 1.7vw;
+}
+.serviceCTA :nth-child(1){
+    width: 3.2vw;
+}
+.serviceCTA :nth-child(2){
+    color: #d4d4d4;
+    font-weight: 400;
+    font-size: 1.7vw;
+}
+.ServiceCarddescirption{
+    padding-top: 2vw;
+}
+.ServiceCarddescirption p{
+    color: var(--paraText);
+}
+.ServiceCarddescirption h3{
+    color: #d4d4d4;
+    font-weight: 400;
+    font-size: 1.7vw;
+    text-transform: uppercase;
+}
+.ServiceBox{
+    margin-left: 1vw;
+    background-color: white;
+    width: 20.31vw;
+    height: 23.26vh;
+    border-radius: .5vw;
+    margin-top: 1.2vw;
+    position: relative;
+}
+.projectimagefix{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    scale: 1.12;
+    overflow: hidden;
+    border-radius: 1vw;
+    border: 1px solid #404040;
+}
+.bottomCardDiv{
+    position: absolute;
+    bottom: 0;
+}
+.bottomCardDiv img{
+    width: 2.2vw;
+}
+.bottomCardDiv h5{
+    color: #fff;
+    font-weight: 400;
+    font-size: 1.2vw;
+}
+.text-adjusted{
+    color: #fff;
+    font-weight: 400;
+    font-size: 1.3vw;
+}
+@media (max-width: 576px) {
+    .structure{
+        padding-left: 4.5vw;
+    }
+    .firstStructurediv{
+        width: 85vw;
+        min-height: 28.17vh;
+    }
+    .cardimagefix{
+        width: 12vw;
+    }
+    .serviceHeading :nth-child(1) h3 {
+        font-size: 4vw;
+    }
+    .serviceHeading :nth-child(1){
+        gap: 10px !important;
+    }
+    .serviceCTA :nth-child(1) {
+        width: 8.2vw;
+    }
+    .serviceCTA :nth-child(2) {
+        color: #d4d4d4;
+        font-weight: 400;
+        font-size: 3.1vw;
+    }
+
+    .ServiceCarddescirption h3 {
+        font-size: 3.7vw;
+    }
+    .secondStructurediv{
+        width: 85vw;
+        min-height: 28.17vh;
+    }
+    .ServiceBox {
+        width: 69.31vw;
+        height: 15.26vh;
+        margin-top: 5vw;
+        margin-left: 7vw;
+        margin-bottom: 4vw;
+    }
+    .projectimagefix {
+        scale: 1.25;
+    }
+    .bottomCardDiv img {
+        width: 5.2vw;
+    }
+    .bottomCardDiv{
+        left: 0;
+    }
+    .bottomCardDiv h5 {
+        font-size: 3.2vw;
+    }    
+    .Servicebuttons :nth-child(1) h3 {
+        font-size: 4.3vw;
+    }
+    .callToActionService :nth-child(2) h3 {
+        font-size: 4.3vw;
+        padding: 2vw;
+    }
+    .callToActionService {
+        padding-left: 4vw;
+    }
+    .responsiveDirectionColumn{
+        flex-direction: column;
+    }
+}

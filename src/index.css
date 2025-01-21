@@ -1,0 +1,103 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* globaly definded colors */
+:root {
+  --navbarColor: #1a1a1a;
+  --navbarLinks: #0f0f0f;
+  --navbarLinksColor: #81807e;
+  --secondaryColor: #ce7d63;
+  --secondaryHoverColor: #ffaf94;
+  --servicesText: #f9efec;
+  --paraText: #676665;
+  --successSectionLabelColor: #1f1f1f;
+  --border: #333333;
+  --paragraphText: #b3b3b2;
+  --btnBackground: #1f1f1f;
+  --textColor: #f9efec;
+  --color: #e6e6e6;
+  --testimonilName: #f3dfd8;
+  --aboutNumberColor: #da9e8b;
+
+  --navbarColor: #1a1a1a;
+  --navbarLinks: #0f0f0f;
+  --navbarLinksColor: #81807e;
+  --secondaryColor: #ce7d63;
+  --secondaryHoverColor: #ffaf94;
+  --servicesText: #f9efec;
+  --paraText: #676665;
+  --border: #333333;
+  --paragraphText: #b3b3b2;
+  --btnBackground: #1f1f1f;
+  --textColor: #f9efec;
+  --color: #e6e6e6;
+  --testimonilName: #f3dfd8;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.App {
+  background-color: var(--primaryColor);
+  min-height: 100vh;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+:root {
+  --primaryColor: #0b0b0b;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* globaly definded colors */
+:root {
+  --navbarColor: #1a1a1a;
+  --navbarLinks: #0f0f0f;
+  --navbarLinksColor: #81807e;
+  --secondaryColor: #ce7d63;
+  --secondaryHoverColor: #ffaf94;
+  --servicesText: #f9efec;
+  --paraText: #676665;
+  --successSectionLabelColor: #1f1f1f;
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.App {
+  background-color: var(--primaryColor);
+  min-height: 100vh;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+:root {
+  --primaryColor: #e6e6e6;
+}
+::-webkit-scrollbar {
+  display: none;
+}
