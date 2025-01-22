@@ -1,12 +1,12 @@
 .FooterSection {
   min-height: 100vh;
-  padding: 2vw;
+  padding: 0vw 2vw;
 }
 .footerHeading {
   width: 96vw;
   height: 36.3vh;
   border-radius: 12px;
-  background-color: blue;
+  background-color: #1c1c1c;
   padding: 2.5vw;
   color: white;
 }
@@ -29,7 +29,7 @@
   width: 2vw;
 }
 .footermarquee {
-  background-color: blue;
+  background-color: #1c1c1c;
   border-radius: 12px;
   margin-top: 1vw;
 }
@@ -40,22 +40,22 @@
   min-height: 32vh;
   width: 22.5vw;
   border-radius: 12px;
-  background-color: blue;
+  background-color: #1c1c1c;
 }
 .footerLinksPart2 {
   min-height: 31.3vh;
-  background-color: blue;
+  background-color: #1c1c1c;
   border-radius: 12px;
 }
 .footerLinksPart3 {
   min-height: 16.85vh;
-  background-color: blue;
+  background-color: #1c1c1c;
   border-radius: 12px;
   padding-right: 2vw;
 }
 .footerLinksPart4 {
   min-height: 11.76vh;
-  background-color: blue;
+  background-color: #1c1c1c;
   border-radius: 12px;
   padding: 0vw 2vw;
   display: flex;
