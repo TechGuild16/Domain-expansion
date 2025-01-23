@@ -32,8 +32,8 @@
 
 /* Navbar Container */
 .simple-navbar {
- background-color: #151515;
- color: white;
+  background-color: #151515;
+  color: white;
   padding: 10px 0px;
   border-radius: 15px;
   height: 12vh;
@@ -61,9 +61,7 @@
   background-color: var(--navbarLinks);
   color: white;
 }
-c
-
-.getStarted {
+c .getStarted {
   background-color: var(--color) !important;
   color: #fff !important;
 }
@@ -77,19 +75,19 @@ c
 .navbar-toggler .navbar-toggler-icon {
   color: #fff;
 }
-.dropdown-menu{
+.dropdown-menu {
   background-color: #dad4ec;
   border: none;
   color: white;
 }
-.nav-link{
+.nav-link {
   color: white;
 }
-.domainlogo{
+.domainlogo {
   width: 25vw;
 }
-@media screen and (max-width: 600px){
+@media screen and (max-width: 600px) {
   .simple-brand {
-      font-size: 1.2rem !important;
+    font-size: 1.2rem !important;
   }
 }

@@ -1,9 +1,8 @@
-import React from "react";
-import { Link, useLocation } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js"; // Import Bootstrap JS
+import React from "react";
+import { Link, useLocation } from "react-router-dom";
 import "./Navbar.css";
-import domainexpansionlogo from '../../../Assets/domainExpansionLogo.svg'
 const Navbar = ({ brandName, brandLink, customClass }) => {
   const location = useLocation();
 
@@ -55,7 +54,10 @@ const Navbar = ({ brandName, brandLink, customClass }) => {
                   >
                     {link.label}
                   </a>
-                  <ul className="dropdown-menu" aria-labelledby="solutionsDropdown">
+                  <ul
+                    className="dropdown-menu"
+                    aria-labelledby="solutionsDropdown"
+                  >
                     <li>
                       <Link className="dropdown-item" to="/branding">
                         Branding
@@ -81,9 +83,9 @@ const Navbar = ({ brandName, brandLink, customClass }) => {
               ) : (
                 <li className="nav-item" key={link.path}>
                   <Link
-                    className={`nav-link navbar-link ${link.className} ${isActive(
-                      link.path
-                    )}`}
+                    className={`nav-link navbar-link ${
+                      link.className
+                    } ${isActive(link.path)}`}
                     to={link.path}
                   >
                     {link.label}

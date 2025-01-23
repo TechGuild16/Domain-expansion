@@ -14,3 +14,542 @@
 .showcaseBtn {
   width: 20vw;
 }
+/* General Styling */
+.portfolio {
+  min-height: 100vh;
+}
+
+.portfolioHerosec {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.BrandHeading {
+  text-align: center;
+  padding-top: 7vw;
+}
+
+.BrandHeading h1 {
+  color: #7dc000;
+  font-size: 6vw;
+  line-height: 1;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 0px 10px 5px rgba(0, 255, 136, 0.3),
+    0px 15px 10px rgba(0, 255, 179, 0.1);
+}
+
+.BrandHeading p {
+  color: #7dc000;
+  padding-top: 3vw;
+  font-size: 1.5vw;
+  font-weight: 500;
+}
+
+.AboutBrand {
+  padding-left: 3vw;
+  padding-right: 3vw;
+  padding-top: 13vw;
+}
+
+.AboutBrand :nth-child(1) h1 {
+  color: #7dc000;
+  font-size: 4vw;
+}
+
+.boldpart {
+  font-weight: 900;
+  color: #d9ff00;
+}
+
+.dot {
+  background-color: #d9ff00;
+  width: 1vh;
+  height: 1vh;
+}
+
+.line {
+  width: 8vw;
+  height: 1vh;
+  background-color: #d9ff00;
+  border-radius: 23px;
+}
+
+.detailBrand {
+  color: #7dc000;
+  font-size: 1.25vw;
+  font-weight: 500;
+}
+
+.powerfulbrand {
+  min-height: 100vh;
+}
+
+.powerfulBrandHeading {
+  text-align: center;
+  padding-top: 7vw;
+}
+
+.powerfulBrandHeading h1 {
+  color: #7dc000;
+}
+
+.powerfulBrandHeading span {
+  font-weight: 900;
+  color: #d9ff00;
+}
+
+/* Updated BrandBox Styling for Tilt and Flip Effect */
+/* General Styling */
+/* General Styling */
+.brandBox {
+  width: 21vw;
+  height: 64vh;
+  perspective: 1000px; /* Enables 3D effect */
+  position: relative;
+  overflow: hidden;
+}
+
+.cardContent {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transform: rotateY(0deg);
+  transition: transform 0.8s ease, box-shadow 0.3s ease;
+}
+
+.cardContent:hover {
+  transform: rotateY(180deg);
+  box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Hover Effect for Tilt */
+.brandBox:hover .cardContent {
+  transform: rotateY(180deg);
+}
+
+.cardFront,
+.cardBack {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.cardFront {
+  z-index: 2;
+}
+
+.cardBack {
+  z-index: 1;
+  transform: rotateY(180deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #7dc000;
+  color: white;
+  font-size: 1.5vw;
+  font-weight: bold;
+  opacity: 0; /* Start with text invisible */
+  transform: rotateY(180deg) translateZ(20px) scale(0.8); /* Initial off-screen, small and rotated */
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+/* Text Animation: Text Appears with Tilt */
+.brandBox:hover .cardBack {
+  opacity: 1;
+  transform: rotateY(180deg) translateZ(20px) scale(1) rotateY(10deg); /* Text slides in with tilt */
+}
+
+.cardBack h1 {
+  transition: transform 0.8s ease;
+  transform: rotateX(90deg); /* Initial hidden position */
+}
+
+/* Tilt Animation for Text */
+.brandBox:hover .cardBack h1 {
+  transform: rotateX(0deg);
+}
+
+.brandBox img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  scale: 1.1;
+  transition: transform 0.3s ease;
+}
+
+.brandBox:hover img {
+  transform: scale(1.1);
+}
+
+.caseStudy {
+  min-height: 100vh;
+}
+.Caseheading {
+  text-align: center;
+  padding-top: 11vw;
+}
+.Caseheading h1 {
+  color: #7dc000;
+  position: relative;
+  z-index: 150;
+  font-size: 4vw;
+}
+.Caseheading h1::before {
+  content: "Case Study";
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  font-size: 8vw;
+  font-weight: 900;
+  top: -120%;
+  color: transparent;
+  -webkit-text-stroke: 2px #7dc000;
+  text-stroke: 2px #7dc000;
+}
+.whypickus {
+  max-width: 90%;
+  margin: auto;
+  margin-top: 10vw;
+  min-height: 50vh;
+  border-radius: 23px;
+  background-color: #161616;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+.whypickus h1 {
+  padding-top: 2vw;
+  color: #7dc000;
+}
+.whypickus span {
+  color: #d9ff00;
+  font-weight: 900;
+}
+.whypickus p {
+  color: #7dc000;
+  padding: 4vw;
+  font-weight: 500;
+  font-size: 1.4vw;
+}
+.brandSolutions {
+  min-height: 100vh;
+}
+.solutionsHeading {
+  text-align: center;
+  padding-top: 8vw;
+}
+.solutionsHeading h1 {
+  color: #7dc000;
+  font-size: 4vw;
+}
+.solutionsHeading span {
+  font-weight: 900;
+  color: #d9ff00;
+}
+.solutionsHeading p {
+  color: #7dc000;
+  padding-top: 1vw;
+  font-size: 1.5vw;
+  font-weight: 500;
+}
+.animatedPhotosdiv {
+  max-width: 97%;
+  margin: 4vw auto;
+  border-radius: 23px;
+  background-color: white;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.firstdiv {
+  width: 50vw;
+  height: 100%;
+  border-right: 1px solid white;
+  position: relative;
+}
+
+.blackopacdiv {
+  width: 100%;
+  position: absolute;
+  bottom: -30%;
+  height: 42vh;
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 2vw;
+  justify-content: center;
+  background: linear-gradient(to bottom, transparent, rgb(0, 0, 0));
+  z-index: 1;
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+
+.blackopacdiv h1 {
+  color: white;
+  font-size: 2vw;
+  font-weight: bold;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+.secondDiv,
+.thirdDiv,
+.fourthDiv {
+  height: 100%;
+  border-right: 1px solid white;
+  width: 16vw;
+  transition: width 0.5s ease;
+  position: relative;
+}
+
+.firstdiv img,
+.secondDiv img,
+.thirdDiv img,
+.fourthDiv img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.firstdiv img {
+  border-top-left-radius: 18px;
+  border-bottom-left-radius: 18px;
+}
+
+.fourthDiv img {
+  border-top-right-radius: 18px;
+  border-bottom-right-radius: 18px;
+}
+
+.secondDiv:hover,
+.thirdDiv:hover,
+.fourthDiv:hover {
+  width: 50vw;
+}
+.firstdiv .blackopacdiv {
+  bottom: 0;
+  opacity: 1;
+}
+.secondDiv:hover .blackopacdiv,
+.thirdDiv:hover .blackopacdiv,
+.fourthDiv:hover .blackopacdiv {
+  bottom: 0;
+  opacity: 1;
+}
+.secondDiv.expanded,
+.thirdDiv.expanded,
+.fourthDiv.expanded {
+  width: 50vw;
+}
+.letsTalk {
+  min-height: 100vh;
+}
+.talkDiv {
+  max-width: 95%;
+  height: 70vh;
+  border: 1px solid #7dc000;
+  margin: 8vw auto;
+  border-radius: 23px;
+  box-shadow: 0 24px 28px rgb(0, 0, 0), 0 22px 20px rgba(0, 0, 0, 0.15);
+}
+.talkDivheading {
+  text-align: center;
+  padding-top: 4vw;
+  color: #7dc000;
+}
+.talkDivheading p {
+  padding-top: 4vw;
+  color: #7dc000;
+  font-weight: 500;
+  font-size: 1.5vw;
+}
+.button {
+  padding-top: 4vw;
+}
+.button button {
+  background-color: #7dc000;
+  border: none;
+  padding: 1vw 3vw 1vw 3vw;
+  border-radius: 23px;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 1.5vw;
+}
+@media screen and (max-width: 600px) {
+  .BrandHeading {
+    padding-top: 21vw !important;
+  }
+  .BrandHeading h1 {
+    color: #7dc000;
+    font-size: 7.5vw !important;
+  }
+  .BrandHeading p {
+    padding-top: 4vw !important;
+    font-size: 2.5vw !important;
+  }
+  .AboutBrand :nth-child(1) h1 {
+    font-size: 7vw !important;
+  }
+  .detailBrand {
+    color: #7dc000;
+    font-size: 3vw !important;
+  }
+  .powerfulBrandHeading h1 {
+    font-size: 7.5vw !important;
+  }
+  .AboutBrand {
+    padding-top: 29vw !important;
+  }
+  .powerfulBrandHeading {
+    padding-top: 23vw !important;
+  }
+  .myflexrow {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    padding: 6vw !important;
+  }
+  .brandBox {
+    width: 45vw !important;
+    height: 49vh !important;
+  }
+  .caseStudy {
+    margin-top: 17vw;
+  }
+  .Caseheading h1 {
+    font-size: 8vw !important;
+  }
+  .Caseheading h1::before {
+    font-size: 8vw;
+    top: -57%;
+    color: #d9ff00;
+    -webkit-text-stroke: unset;
+  }
+  .whypickus h1 {
+    font-size: 6vw !important;
+  }
+  .whypickus {
+    padding: 5vw;
+  }
+  .whypickus p {
+    font-size: 2.4vw !important;
+  }
+  .solutionsHeading h1 {
+    font-size: 7vw !important;
+  }
+  .solutionsHeading p {
+    font-size: 3.5vw !important;
+  }
+  .animatedPhotosdiv {
+    flex-direction: column;
+  }
+  .firstdiv {
+    width: 98vw !important;
+    height: 39vh !important;
+  }
+  .secondDiv {
+    width: 98vw !important;
+    height: 39vh !important;
+  }
+  .thirdDiv {
+    width: 98vw !important;
+    height: 39vh !important;
+  }
+  .fourthDiv {
+    width: 98vw !important;
+    height: 39vh !important;
+  }
+  .blackopacdiv h1 {
+    color: white;
+    font-size: 5vw !important;
+  }
+  .animatedPhotosdiv {
+    max-width: 87% !important;
+    min-height: 156vh !important;
+  }
+  .secondDiv .blackopacdiv,
+  .thirdDiv .blackopacdiv,
+  .fourthDiv .blackopacdiv {
+    bottom: 0;
+    opacity: 1;
+  }
+  .talkDiv {
+    max-width: 87% !important;
+    height: 55vh;
+  }
+  .talkDivheading h1 {
+    font-size: 7vw;
+  }
+  .talkDivheading p {
+    padding-top: 5vw;
+    font-size: 3.5vw;
+  }
+  .button button {
+    font-size: 5.5vw;
+  }
+}
+@media screen and (max-width: 400px) {
+  .BrandHeading h1 {
+    font-size: 13.5vw !important;
+  }
+  .BrandHeading p {
+    font-size: 6.5vw !important;
+  }
+  .AboutBrand :nth-child(1) h1 {
+    font-size: 12vw !important;
+  }
+  .line {
+    width: 23vw !important;
+  }
+  .detailBrand {
+    font-size: 6.5vw !important;
+  }
+  .powerfulBrandHeading h1 {
+    font-size: 10.5vw !important;
+  }
+  .myflexrow {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+  }
+  .brandBox {
+    width: 90vw !important;
+    height: 49vh !important;
+  }
+  .Caseheading h1 {
+    font-size: 12vw !important;
+  }
+  .Caseheading h1::before {
+    font-size: 12vw;
+    top: -44%;
+    width: 100%;
+  }
+  .solutionsHeading {
+    padding-top: 26vw !important;
+  }
+  .whypickus h1 {
+    font-size: 9vw !important;
+  }
+  .whypickus p {
+    font-size: 4.4vw !important;
+  }
+  .solutionsHeading h1 {
+    font-size: 11vw !important;
+  }
+  .solutionsHeading p {
+    font-size: 4.5vw !important;
+  }
+  .talkDivheading h1 {
+    font-size: 11vw !important;
+  }
+  .talkDivheading p {
+    padding-top: 5vw;
+    font-size: 5.5vw;
+  }
+  .talkDiv {
+    max-width: 87% !important;
+    height: 61vh;
+  }
+}
