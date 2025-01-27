@@ -1,0 +1,552 @@
+.BrandHeading h2{
+    color: #ffffff;
+    font-size: 6vw;
+}
+.homepsan{
+    font-weight: 500;
+}
+.BrandingHerosec {
+  padding-top: 4vw;
+}
+.outbox{
+    color: #6E44FF;
+    text-align: center;
+    padding-top: 3vw;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.BrandHeading{
+    margin-top: -3vw;
+}
+.whychooseus {
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+
+  .chooseContent {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .chooseContent p:nth-child(1) {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 1.2rem;
+  }
+  .chooseContent h1 {
+    color: #6E44FF;
+    margin-top: -0.5rem;
+    font-size: 2.5rem;
+  }
+  
+  .chooseContent p:nth-child(3) {
+    color: #9c9c9c;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  .aboutContent .services {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+  }
+  
+  .service {
+    position: relative;
+    border: 1px solid #754ffe;
+    color: #9e83ff;
+    font-weight: bold;
+    width: 16vw;
+    height: 10vh;
+    display: flex;
+    font-size: 1.2vw;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .service:hover {
+    background-color: #6E44FF;
+    color: #fff;
+    transform: scale(1.05);
+    cursor: pointer;
+  }
+  .service.active {
+    background-color: #6E44FF;
+    color: #fff;
+    border-color: #6E44FF;
+  }
+  
+  .diamond {
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 10px;
+    height: 10px;
+    background-color: #ffffff;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  }
+.brandDetail{
+    min-height: 90vh;
+}
+.brandDetailBox1{
+    width: 65vw;
+    height: 80vh;
+    padding-top:7vw;
+    padding-left: 7vw;
+
+}
+.brandDetailBox2{
+    width: 40vw;
+    height: 80vh;
+    padding: 3vw 1vw;
+    padding-right: 5vw;
+}
+.brandDetailBox1 h1{
+    color: #fff;
+    font-size: 2.5vw;
+    font-weight: 700;
+}
+.checkboxesBrand{
+    flex-direction: column;
+}
+.checkBox{
+    width: 2.5vw;
+}
+.checkboxesBrand .mydivver{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.divver2{
+    margin-top: -1vw;
+}
+.checkboxesBrand .mydivver p{
+    font-size: 2.5vw;
+    color: #6E44FF;
+    font-weight: 500;
+   padding-top: .5vw;
+}
+.innerbox2{
+    width: 100%;
+    border-radius: 12px;
+    height: 100%;
+    background-color: #0f0f0f;
+    display: flex;
+    padding: 1.5vw;
+    border: 1px solid rgb(49, 49, 49);
+    flex-direction: column;
+}
+.upInnerBox{
+    width: 100%;
+    height: 70%;
+    border-radius: 12px;
+    background-color: white;
+}
+.upInnerBox img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+#homebutton2{
+  display: flex;
+  justify-content: center; 
+}
+.organization {
+  min-height: 70vh;
+  padding: 20px 0;
+}
+
+.organizationHeading {
+  text-align: center;
+  margin-bottom: 20px; 
+}
+
+.organizationHeading h1 {
+  color: #fff;
+  font-weight: 700;
+  line-height: 1;
+  font-size: 4vw;
+}
+
+.showcaseBox {
+  width: 20vw;
+  height: 23vh;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  margin: 10px; 
+}
+
+.companyShowcase {
+  margin-top: 4vw;
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center;
+}
+
+.showcaseBox img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(300%);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.byTheName{
+  height: 70vh;
+  background-color: #0e0e0e;
+}
+.bynameContent{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.byDetails{
+  text-align: center;
+}
+.byDetails :nth-child(1){
+  text-transform: uppercase;
+  color: #fff;
+}
+.byDetails h1{
+  margin-top: -1.5vw;
+  font-size: 5vw;
+  color: #6E44FF;
+}
+.byDetails :nth-child(3){
+  color: #bdbdbd;
+}
+.bestSolutions{
+  min-height: 100vh;
+}
+#homebutton3{
+  display: none;
+}
+.bestSolutionsHeading{
+  text-align: center;
+  padding-top: 8vw;
+}
+.bestSolutionsHeading p{
+  color: #ffff;
+}
+.bestSolutionsHeading h1{
+  color: #7c58ff;
+  font-size: 4vw;
+  margin-top: -1vw;
+
+}
+.solutionsContainer{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding-top: 5vw;
+  flex-wrap: wrap;
+}
+.solutionsContainer h1{
+  font-size: 2vw;
+  color: #ffff !important; 
+  cursor: pointer;
+}
+.cardContainerSol{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 2vw;
+}
+.solutionsCard{
+  width: 17vw;
+  height: 30vh;
+  border-radius: 1vw;
+  background-color: white;
+  display: flex;
+  align-items: end;
+  position: relative;
+  overflow: hidden;
+}
+.solutionsCard img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1vw;
+  filter: brightness(80%);
+  transition: scale .3s ease;
+  cursor: pointer;
+}
+.solutionsCard:hover #solcarimg{
+  scale: 1.3;
+  transition: scale .3s ease;
+}
+.contentboxsol{
+  position: absolute;
+  color: white;
+  padding: 1vw;
+}
+.sliderHome{
+  min-height: 80vh;
+  background-color: #0f0f0f;
+  margin-top: 6vw;
+  margin-bottom: 6vw; 
+  color: #fff;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.testimonial-card {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.company-name {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.testimonial-description {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.testimonial-stars {
+  color: #ffd700; 
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+.slick-prev,
+.slick-next {
+  width: 10vw !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  z-index: 1; 
+}
+
+.slick-prev:before,
+.slick-next:before {
+  font-family: 'slick' !important;
+  font-size: 30px !important; 
+  color: black; 
+}
+
+.slick-prev {
+  left: -30px; 
+}
+
+.slick-next {
+  right: -30px; 
+}
+.testimonial-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 20px;
+}
+.quote-icon {
+  font-size: 40px;
+  color: #fff;
+  margin-bottom: 20px; 
+}
+.testimonial-avatar {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  border: 2px solid #fff;
+}
+
+.person-name {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.designation {
+  font-size: 14px;
+  color: #ffd700;
+  margin: 0;
+}
+
+@media screen and (max-width: 1200px) {
+  .organizationHeading h1 {
+    font-size: 6vw; 
+  }
+
+  .showcaseBox {
+    width: 25vw;
+    height: 20vh;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .organizationHeading h1 {
+    font-size: 8vw; 
+  }
+
+  .showcaseBox {
+    width: 40vw; 
+    height: 15vh;
+  }
+}
+
+@media screen and (max-width: 600px){
+  html,body{
+    overflow-x: hidden;
+  }
+  .outbox{
+    padding-top: 9vw;
+}
+  .mynavigationbar{
+    position: fixed;
+    top: 0;
+  }
+  .BrandHeading h2 {
+    font-size: 13vw !important;
+}
+#homebutton button{
+  padding: 4vw 20vw 4vw 20vw;
+}
+#homebutton{
+  padding-top: 10vw;
+}
+.chooseContent p:nth-child(1) {
+  font-size: 1rem !important;
+}
+.chooseContent h1 {
+  font-size: 2.4rem !important;
+}
+.chooseContent p:nth-child(3) {
+  padding-top: 2vw;
+}
+.aboutContent{
+  width: 100vw;
+}
+.service{
+  font-size: 4vw !important;
+  width: 31vw !important;
+}
+.aboutContent .services {
+  gap: 0;
+}
+.responseService {
+  width: 47vw !important;
+}
+.responsivedetail{
+  flex-direction: column-reverse;
+}
+#homebutton3{
+  display: block;
+}
+#homebutton2{
+  display: none;
+}
+.brandDetailBox2 {
+  width: 99vw !important;
+  padding-right: 2vw !important;
+  background-color: unset;
+}
+.upInnerBox {
+  max-width: 88% !important;
+  height: 100% !important;
+  margin: 2vw 3vw !important;
+}
+.brandDetailBox2 {
+  width: 40vw;
+  height: 28vh !important;
+}
+.innerbox2{
+  background-color: unset;
+}
+.brandDetail {
+  min-height: 90vh;
+  border: 1px solid white;
+  max-width: 93vw;
+}
+.brandDetailBox1 {
+  width: 100vw;
+}
+.brandDetailBox1 h1 {
+  font-size: 8.5vw !important;
+}
+.checkBox {
+  width: 5.5vw !important;
+}
+.checkboxesBrand .mydivver p {
+  font-size: 5.5vw !important;
+}
+.divver2{
+  padding-right: 15vw;
+}
+.checkboxesBrand{
+  padding-top: 6vw;
+}
+.organization {
+  margin-top: 11vw !important;
+}
+.organizationHeading h1 {
+  font-size: 10vw !important;
+}
+.companyShowcase {
+  margin-top: 16vw !important;
+}
+.byDetails :nth-child(1) {
+  font-size: 5vw !important;
+}
+.byDetails h1 {
+  font-size: 13vw !important;
+}
+.byDetails :nth-child(3) {
+  padding-top: 1vw !important;
+}
+.bestSolutionsHeading {
+  padding-top: 20vw !important;
+}
+.bestSolutionsHeading h1 {
+font-size: 8vw !important;
+}
+.solutionsContainer h1 {
+font-size: 4vw !important;
+}
+.solutionsContainer {
+gap: 4px !important;
+}
+.cardContainerSol{
+  flex-direction: column;
+}
+.solutionsCard {
+  width: 89vw !important;
+}
+.contentboxsol {
+  position: absolute;
+  color: white;
+  padding: 5vw !important;
+}
+@media screen and (max-width: 480px) {
+  .organizationHeading h1 {
+    font-size: 10vw;
+  }
+
+  .showcaseBox {
+    width: 80vw; 
+    height: 20vh;
+  }
+
+  .companyShowcase {
+    margin-top: 2vw;
+  }
+
+}}

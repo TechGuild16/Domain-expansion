@@ -1,93 +1,42 @@
-:root {
-  --navbarColor: #1a1a1a;
-  --navbarLinks: #0f0f0f;
-  --navbarLinksColor: #81807e;
-  --secondaryColor: #ce7d63;
-  --secondaryHoverColor: #ffaf94;
-  --servicesText: #f9efec;
-  --paraText: #676665;
-  --successSectionLabelColor: #1f1f1f;
-  --border: #333333;
-  --paragraphText: #b3b3b2;
-  --btnBackground: #1f1f1f;
-  --textColor: #f9efec;
-  --color: #e6e6e6;
-  --testimonilName: #f3dfd8;
-  --aboutNumberColor: #da9e8b;
-
-  --navbarColor: #1a1a1a;
-  --navbarLinks: #0f0f0f;
-  --navbarLinksColor: #81807e;
-  --secondaryColor: #ce7d63;
-  --secondaryHoverColor: #ffaf94;
-  --servicesText: #f9efec;
-  --paraText: #676665;
-  --border: #333333;
-  --paragraphText: #b3b3b2;
-  --btnBackground: #1f1f1f;
-  --textColor: #f9efec;
-  --color: #e6e6e6;
-  --testimonilName: #f3dfd8;
+/* Custom CSS for Navbar */
+#myNavbar {
+  border-bottom: 2px solid #6E44FF !important; 
+  background-color: rgba(0, 0, 0, 0.283) !important;
+  backdrop-filter: blur(5px) !important;
+  border-radius: 64px !important;
+  position: fixed !important;
+  width: 100%;
 }
 
-/* Navbar Container */
-.simple-navbar {
-  background-color: #151515;
-  color: white;
-  padding: 10px 0px;
-  border-radius: 15px;
-  height: 12vh;
-  max-width: 1820px;
-}
-
-/* Brand Styling */
-.simple-brand {
-  font-size: 1.5rem;
-  padding-left: 1.2vw;
-  color: #fff;
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  text-decoration: none;
-}
-
-.navbar-link.active span {
-  background-color: var(--color);
-  color: white;
-  font-weight: 500;
-}
-
-.navbar-link:hover span {
-  background-color: var(--navbarLinks);
-  color: white;
-}
-c .getStarted {
-  background-color: var(--color) !important;
-  color: #fff !important;
-}
-.navbar-collapse {
-  background-color: var(blue);
-}
-.navbar-collapse .navbar-nav {
-  text-align: center;
-}
-
-.navbar-toggler .navbar-toggler-icon {
-  color: #fff;
-}
-.dropdown-menu {
-  background-color: #dad4ec;
-  border: none;
-  color: white;
-}
 .nav-link {
-  color: white;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  margin: 0 10px; 
 }
-.domainlogo {
-  width: 25vw;
+
+.nav-link:hover {
+  color: #6E44FF !important;
 }
-@media screen and (max-width: 600px) {
-  .simple-brand {
-    font-size: 1.2rem !important;
+
+.nav-link.active {
+  color: #6E44FF !important; 
+}
+
+.dropdown-item:hover {
+  background-color: #6E44FF; 
+  color: white !important;
+}
+.dropdown-menu{
+  background-color: black;
+}
+.navbar-brand img {
+  max-height: 40px; 
+  scale: 4;
+  padding-left: 2vw;
+}
+@media screen and (max-width: 600px){
+  .navbar-brand img {
+    padding-left: 6vw;
+    scale: 3.5;
   }
 }

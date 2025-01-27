@@ -13,11 +13,13 @@ import Portfolio from "./pages/Portfolio/Portfolio.jsx";
 import Solutions from "./pages/Solutions/Solutions.jsx";
 import Branding from "./pages/branding/Branding.jsx";
 import WebAppDev from "./pages/WebAppDevelopment/WebAppDev.jsx";
+import DigitalMarketing from "./pages/DigitalMarketing/DigitalMarketing.jsx";
+import CreativeDesign from "./pages/Creativedesigning/CreativeDesign.jsx";
 function App() {
-  // Now navbar is an reusable component u can send link according to your need
-
   return (
     <div className="App">
+      <div className=" circle-1"></div>
+
       <BrowserRouter>
         <DynamicTitle />
         <Navbar
@@ -34,6 +36,8 @@ function App() {
           <Route path="/ContactUs" element={<ContactUs />} />
           <Route path="/branding" element={<Branding />} />
           <Route path="/web-app-development" element={<WebAppDev />} />
+          <Route path="/digital-marketing" element={<DigitalMarketing />} />
+          <Route path="/creative-designing" element={<CreativeDesign />} />
         </Routes>
         <Footer />
       </BrowserRouter>

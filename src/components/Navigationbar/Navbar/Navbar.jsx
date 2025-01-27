@@ -1,51 +1,61 @@
-import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap/dist/js/bootstrap.bundle.min.js"; // Import Bootstrap JS
-import React from "react";
+import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import "./Navbar.css";
-const Navbar = ({ brandName, brandLink, customClass }) => {
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min.js";
+import domainexpansionlogo from "../../../Assets/domainExpansionLogo.png";
+import './Navbar.css'
+const Navbar = ({ brandName, brandLink }) => {
   const location = useLocation();
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const isActive = (path) => {
-    return location.pathname === path && location.pathname !== brandLink
-      ? "active"
-      : "";
+    return location.pathname === path ? "active" : "";
   };
 
   const navLinks = [
-    { path: "/Solutions", label: "SOLUTIONS", className: "solutions" },
+    { path: "/Solutions", label: "SOLUTIONS", className: "solutions", dropdown: true },
     { path: "/Portfolio", label: "PORTFOLIO", className: "portfolio" },
     { path: "/About", label: "ABOUT", className: "about" },
     { path: "/Blogs", label: "BLOGS", className: "blogs" },
-    { path: "/ContactUs", label: "CONTACT US", className: "projects" },
+    { path: "/ContactUs", label: "CONTACT US", className: "contact" },
   ];
 
-  return (
-    <div className={`container-fluid pt-3 sticky-top ${customClass}`}>
-      <nav className="navbar navbar-expand-lg simple-navbar px-4">
-        <a className="navbar-brand simple-brand" href={brandLink}>
-          {brandName}
-        </a>
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
 
+  return (
+    <nav className="navbar navbar-expand-lg navbar-dark bg-dark sticky-top py-2" id="myNavbar">
+      <div className="container-fluid">
+        {/* Brand Logo */}
+        <Link className="navbar-brand" to={brandLink}>
+          <img
+            src={domainexpansionlogo}
+            alt="Domain Expansion Logo"
+            className="img-fluid"
+            style={{ maxHeight: "40px", width: "auto" }} // Fixed logo size
+          />
+        </Link>
+
+        {/* Toggle Button for Mobile */}
         <button
           className="navbar-toggler"
           type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
+          onClick={toggleMenu}
+          aria-expanded={isMenuOpen}
           aria-label="Toggle navigation"
         >
           <span className="navbar-toggler-icon"></span>
         </button>
 
-        <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav ms-auto">
+        {/* Navbar Links */}
+        <div className={`collapse navbar-collapse ${isMenuOpen ? "show" : ""}`}>
+          <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
             {navLinks.map((link) =>
-              link.label === "SOLUTIONS" ? (
+              link.dropdown ? (
                 <li className="nav-item dropdown" key={link.path}>
                   <a
-                    className={`nav-link dropdown-toggle ${link.className}`}
+                    className={`nav-link dropdown-toggle ${isActive(link.path)}`}
                     href="#"
                     id="solutionsDropdown"
                     role="button"
@@ -54,10 +64,7 @@ const Navbar = ({ brandName, brandLink, customClass }) => {
                   >
                     {link.label}
                   </a>
-                  <ul
-                    className="dropdown-menu"
-                    aria-labelledby="solutionsDropdown"
-                  >
+                  <ul className="dropdown-menu dropdown-menu-dark" aria-labelledby="solutionsDropdown">
                     <li>
                       <Link className="dropdown-item" to="/branding">
                         Branding
@@ -83,10 +90,9 @@ const Navbar = ({ brandName, brandLink, customClass }) => {
               ) : (
                 <li className="nav-item" key={link.path}>
                   <Link
-                    className={`nav-link navbar-link ${
-                      link.className
-                    } ${isActive(link.path)}`}
+                    className={`nav-link ${isActive(link.path)}`}
                     to={link.path}
+                    onClick={toggleMenu}
                   >
                     {link.label}
                   </Link>
@@ -95,8 +101,8 @@ const Navbar = ({ brandName, brandLink, customClass }) => {
             )}
           </ul>
         </div>
-      </nav>
-    </div>
+      </div>
+    </nav>
   );
 };
 
