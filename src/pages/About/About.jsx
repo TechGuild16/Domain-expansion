@@ -1,14 +1,15 @@
 import React from "react";
-import LetsTalk from "../../components/PortfolioComponent/LetsTalk";
+import AboutUHeroSec from "../../components/AboutUsComponent/AboutUsHeroSec";
+import Achievements from "../../components/AboutUsComponent/Achivements";
+import "./About.css";
 
-const About = () => {
-  <div className="About">
-    <LetsTalk
-      firstText="Let's redefine your brand together"
-      secondText="We cover it all"
-      desc="Ready to transform your brand narrative? Let’s do it."
-    />
-  </div>;
+const Branding = () => {
+  return (
+    <div className="aboutus">
+      <AboutUHeroSec />
+      <Achievements />
+    </div>
+  );
 };
 
-export default About;
+export default Branding;
