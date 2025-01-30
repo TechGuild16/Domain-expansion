@@ -1,6 +1,6 @@
 /* Custom CSS for Navbar */
 #myNavbar {
-  border-bottom: 2px solid #6E44FF !important; 
+  border-bottom: 2px solid #fff !important; 
   background-color: rgba(0, 0, 0, 0.283) !important;
   backdrop-filter: blur(5px) !important;
   border-radius: 64px !important;
@@ -15,16 +15,16 @@
 }
 
 .nav-link:hover {
-  color: #6E44FF !important;
+  color: #fff !important;
 }
 
 .nav-link.active {
-  color: #6E44FF !important; 
+  color: #fff !important; 
 }
 
 .dropdown-item:hover {
-  background-color: #6E44FF; 
-  color: white !important;
+  background-color: #fff; 
+  color: black !important;
 }
 .dropdown-menu{
   background-color: black;

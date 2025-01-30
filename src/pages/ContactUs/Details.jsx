@@ -12,7 +12,7 @@ const ContactInfo = () => {
     <Container className="py-5">
       <Row className="g-4 justify-content-center">
         <Col md={4}>
-          <Card className="text-center border-0 shadow-sm">
+          <Card className="text-center mycarder border-0 shadow-sm">
             <Card.Body>
               <div
                 className="rounded-circle bg-light mx-auto d-flex align-items-center justify-content-center"
@@ -28,7 +28,7 @@ const ContactInfo = () => {
           </Card>
         </Col>
         <Col md={4}>
-          <Card className="text-center border-0 shadow-sm">
+          <Card className="text-center mycarder border-0 shadow-sm">
             <Card.Body>
               <div
                 className="rounded-circle bg-light mx-auto d-flex align-items-center justify-content-center"
@@ -48,8 +48,8 @@ const ContactInfo = () => {
             </Card.Body>
           </Card>
         </Col>
-        <Col md={4}>
-          <Card className="text-center border-0 shadow-sm">
+        <Col md={4}> 
+          <Card className="text-center mycarder border-0 shadow-sm">
             <Card.Body>
               <div
                 className="rounded-circle bg-light mx-auto d-flex align-items-center justify-content-center"

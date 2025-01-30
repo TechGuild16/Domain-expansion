@@ -34,10 +34,10 @@ const ContactInfo = () => {
       <Row className="g-4 justify-content-center">
         {contactData.map((contact, index) => (
           <Col key={index} md={3}>
-            <Card className="text-center border-0 shadow-sm">
+            <Card className="text-center mycarder border-0 shadow-sm">
               <Card.Body>
                 <div
-                  className="rounded-circle bg-light mx-auto d-flex align-items-center justify-content-center"
+                  className="rounded-circle bg-light mx-auto  d-flex align-items-center justify-content-center"
                   style={{ width: "70px", height: "70px" }}
                 >
                   <FontAwesomeIcon icon={contact.icon} size="2x" />

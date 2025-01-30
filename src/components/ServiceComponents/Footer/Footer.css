@@ -6,7 +6,8 @@
   width: 96vw;
   height: 36.3vh;
   border-radius: 12px;
-  background-color: #1c1c1c;
+  background-color: #0f0f0f;
+  border: 1px solid rgb(41, 41, 41);
   padding: 2.5vw;
   color: white;
 }
@@ -21,15 +22,15 @@
   width: 14vw;
   height: 7vh;
   border: none;
-  background-color: rgb(116, 83, 179);
-  color: white;
+  background-color: rgb(255, 255, 255);
+  color: black;
   border-radius: 7px;
 }
 .footerButton img {
   width: 2vw;
 }
 .footermarquee {
-  background-color: #1c1c1c;
+  background-color: #0f0f0f;
   border-radius: 12px;
   margin-top: 1vw;
 }
@@ -40,22 +41,26 @@
   min-height: 32vh;
   width: 22.5vw;
   border-radius: 12px;
-  background-color: #1c1c1c;
+  background-color: #0f0f0f;
+  border: 1px solid rgb(45, 45, 45);
 }
 .footerLinksPart2 {
   min-height: 31.3vh;
-  background-color: #1c1c1c;
+  background-color: #0f0f0f;
+  border: 1px solid rgb(45, 45, 45);
   border-radius: 12px;
 }
 .footerLinksPart3 {
   min-height: 16.85vh;
-  background-color: #1c1c1c;
+  background-color: #0f0f0f;
+  border: 1px solid rgb(45, 45, 45);
   border-radius: 12px;
   padding-right: 2vw;
 }
 .footerLinksPart4 {
   min-height: 11.76vh;
-  background-color: #1c1c1c;
+  background-color: #0f0f0f;
+  border: 1px solid rgb(45, 45, 45);
   border-radius: 12px;
   padding: 0vw 2vw;
   display: flex;

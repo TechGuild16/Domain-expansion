@@ -15,6 +15,13 @@ import Branding from "./pages/branding/Branding.jsx";
 import WebAppDev from "./pages/WebAppDevelopment/WebAppDev.jsx";
 import DigitalMarketing from "./pages/DigitalMarketing/DigitalMarketing.jsx";
 import CreativeDesign from "./pages/Creativedesigning/CreativeDesign.jsx";
+import CustomerService from "./components/HomeComponents/CustomerService.jsx";
+import CDSolutions from "./components/HomeComponents/CDSolutions.jsx";
+import CCSolution from "./components/HomeComponents/CCSolution.jsx";
+import DMSolution from "./components/HomeComponents/DMSolution.jsx";
+import WADSolutions from "./components/HomeComponents/WADSolutions.jsx";
+import SolCon from "./components/HomeComponents/SolCon.jsx";
+
 function App() {
   return (
     <div className="App">
@@ -38,6 +45,12 @@ function App() {
           <Route path="/web-app-development" element={<WebAppDev />} />
           <Route path="/digital-marketing" element={<DigitalMarketing />} />
           <Route path="/creative-designing" element={<CreativeDesign />} />
+          <Route path="/customer-service" element={<CustomerService />} />
+          <Route path="/CD" element={<CDSolutions />} />
+          <Route path="/CC" element={<CCSolution />} />
+          <Route path="/DM" element={<DMSolution />} />
+          <Route path="/WAD" element={<WADSolutions />} />
+          <Route path="/SolContent/:title" element={<SolCon />} />
         </Routes>
         <Footer />
       </BrowserRouter>

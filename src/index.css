@@ -131,3 +131,29 @@ code {
 ::-webkit-scrollbar {
   display: none;
 }
+.formname{
+  color: #fff;
+}
+.form-control{
+  background-color: #131313;
+  border: 1px solid rgb(68, 68, 68) !important;
+  color: white !important;
+  outline: none;
+  
+}
+.form-control:focus{
+  background-color: #131313;
+  outline: none !important;
+ 
+}
+.form-control::placeholder{
+  color: rgb(154, 154, 154);
+}
+.myformbutton{
+  background-color: #000 !important;
+}
+.mycarder {
+  background-color: rgb(27, 27, 27);
+  border: 1px solid rgb(100, 100, 100) !important;
+  color: rgb(154, 154, 154);
+}

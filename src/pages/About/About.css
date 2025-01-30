@@ -1,8 +1,28 @@
-.aboutus {
+.backgroundColor {
+  background-color: var(--navbarColor);
+}
+.backgroundColor {
+  background-color: var(--navbarColor);
+}
+.backgroundColor:hover {
+  background-color: var(--btnBackground);
+}
+
+.form-control::placeholder {
+  text-align: center;
+  padding: 4px;
+  padding-top: 4px;
+}
+
+.showcaseBtn {
+  width: 20vw;
+}
+/* General Styling */
+.About {
   min-height: 100vh;
 }
 
-.aboutusHerosec {
+.AboutHerosec {
   width: 100%;
   min-height: 100vh;
 }
@@ -13,16 +33,17 @@
 }
 
 .BrandHeading h1 {
-  color: #6e44ff;
+  color: #7dc000;
   font-size: 6vw;
   line-height: 1;
   font-weight: bold;
   text-align: center;
-  text-shadow: 0px 15px 5px #6200ff4d, 0px 15px 10px #7300ff1a;
+  text-shadow: 0px 10px 5px rgba(0, 255, 136, 0.3),
+    0px 15px 10px rgba(0, 255, 179, 0.1);
 }
 
 .BrandHeading p {
-  color: #fff;
+  color: #7dc000;
   padding-top: 3vw;
   font-size: 1.5vw;
   font-weight: 500;
@@ -35,17 +56,17 @@
 }
 
 .AboutBrand :nth-child(1) h1 {
-  color: #7c58ff;
+  color: #7dc000;
   font-size: 4vw;
 }
 
 .boldpart {
   font-weight: 900;
-  color: #ffff;
+  color: #d9ff00;
 }
 
 .dot {
-  background-color: #ffff;
+  background-color: #d9ff00;
   width: 1vh;
   height: 1vh;
 }
@@ -53,12 +74,12 @@
 .line {
   width: 8vw;
   height: 1vh;
-  background-color: #7c58ff;
+  background-color: #d9ff00;
   border-radius: 23px;
 }
 
 .detailBrand {
-  color: #ffff;
+  color: #7dc000;
   font-size: 1.25vw;
   font-weight: 500;
 }
@@ -73,18 +94,21 @@
 }
 
 .powerfulBrandHeading h1 {
-  color: #7c58ff;
+  color: #7dc000;
 }
 
 .powerfulBrandHeading span {
   font-weight: 900;
-  color: #fff;
+  color: #d9ff00;
 }
 
+/* Updated BrandBox Styling for Tilt and Flip Effect */
+/* General Styling */
+/* General Styling */
 .brandBox {
   width: 21vw;
   height: 64vh;
-  perspective: 1000px;
+  perspective: 1000px; /* Enables 3D effect */
   position: relative;
   overflow: hidden;
 }
@@ -103,6 +127,7 @@
   box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.2);
 }
 
+/* Hover Effect for Tilt */
 .brandBox:hover .cardContent {
   transform: rotateY(180deg);
 }
@@ -129,21 +154,23 @@
   color: white;
   font-size: 1.5vw;
   font-weight: bold;
-  opacity: 0;
-  transform: rotateY(180deg) translateZ(20px) scale(0.8);
+  opacity: 0; /* Start with text invisible */
+  transform: rotateY(180deg) translateZ(20px) scale(0.8); /* Initial off-screen, small and rotated */
   transition: opacity 0.8s ease, transform 0.8s ease;
 }
 
+/* Text Animation: Text Appears with Tilt */
 .brandBox:hover .cardBack {
   opacity: 1;
-  transform: rotateY(180deg) translateZ(20px) scale(1) rotateY(10deg);
+  transform: rotateY(180deg) translateZ(20px) scale(1) rotateY(10deg); /* Text slides in with tilt */
 }
 
 .cardBack h1 {
   transition: transform 0.8s ease;
-  transform: rotateX(90deg);
+  transform: rotateX(90deg); /* Initial hidden position */
 }
 
+/* Tilt Animation for Text */
 .brandBox:hover .cardBack h1 {
   transform: rotateX(0deg);
 }
@@ -168,7 +195,7 @@
   padding-top: 11vw;
 }
 .Caseheading h1 {
-  color: #7c58ff;
+  color: #7dc000;
   position: relative;
   z-index: 150;
   font-size: 4vw;
@@ -182,7 +209,7 @@
   font-weight: 900;
   top: -120%;
   color: transparent;
-  -webkit-text-stroke: 2px #7c58ff;
+  -webkit-text-stroke: 2px #7dc000;
   text-stroke: 2px #7dc000;
 }
 .whypickus {
@@ -197,35 +224,35 @@
 }
 .whypickus h1 {
   padding-top: 2vw;
-  color: #7c58ff;
+  color: #7dc000;
 }
 .whypickus span {
-  color: #fff;
+  color: #d9ff00;
   font-weight: 900;
 }
 .whypickus p {
-  color: #b9b9b9;
+  color: #7dc000;
   padding: 4vw;
   font-weight: 500;
   font-size: 1.4vw;
 }
 .brandSolutions {
-  min-height: 50vh;
+  min-height: 100vh;
 }
 .solutionsHeading {
   text-align: center;
   padding-top: 8vw;
 }
 .solutionsHeading h1 {
-  color: #7c58ff;
+  color: #7dc000;
   font-size: 4vw;
 }
 .solutionsHeading span {
   font-weight: 900;
-  color: #ffff;
+  color: #d9ff00;
 }
 .solutionsHeading p {
-  color: #b8b8b8;
+  color: #7dc000;
   padding-top: 1vw;
   font-size: 1.5vw;
   font-weight: 500;
@@ -327,7 +354,7 @@
 .talkDiv {
   max-width: 95%;
   height: 70vh;
-  border: 1px solid #7c58ff;
+  border: 1px solid #7dc000;
   margin: 8vw auto;
   border-radius: 23px;
   box-shadow: 0 24px 28px rgb(0, 0, 0), 0 22px 20px rgba(0, 0, 0, 0.15);
@@ -335,11 +362,11 @@
 .talkDivheading {
   text-align: center;
   padding-top: 4vw;
-  color: #7c58ff;
+  color: #7dc000;
 }
 .talkDivheading p {
   padding-top: 4vw;
-  color: #b1b1b1;
+  color: #7dc000;
   font-weight: 500;
   font-size: 1.5vw;
 }
@@ -347,24 +374,20 @@
   padding-top: 4vw;
 }
 .button button {
-  background-color: #6e44ff;
+  background-color: #7dc000;
   border: none;
   padding: 1vw 3vw 1vw 3vw;
   border-radius: 23px;
   text-transform: uppercase;
-  color: white;
   font-weight: 900;
   font-size: 1.5vw;
 }
 @media screen and (max-width: 600px) {
-  .aboutusHerosec {
-    padding-top: 21vw !important;
-  }
-
   .BrandHeading {
     padding-top: 21vw !important;
   }
   .BrandHeading h1 {
+    color: #7dc000;
     font-size: 7.5vw !important;
   }
   .BrandHeading p {
@@ -375,6 +398,7 @@
     font-size: 7vw !important;
   }
   .detailBrand {
+    color: #7dc000;
     font-size: 3vw !important;
   }
   .powerfulBrandHeading h1 {
@@ -404,6 +428,7 @@
   .Caseheading h1::before {
     font-size: 8vw;
     top: -57%;
+    color: #d9ff00;
     -webkit-text-stroke: unset;
   }
   .whypickus h1 {

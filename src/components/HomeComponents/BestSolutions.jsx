@@ -57,7 +57,6 @@ const BestSolutions = () => {
       ? Solutions
       : Solutions.filter((solution) => solution.Highlight === nameMatch);
 
-  // Animation variants for the cards
   const cardVariants = {
     hidden: { opacity: 0, scale: 0.8, rotate: -10, x: -50 },
     visible: (index) => ({
@@ -75,7 +74,6 @@ const BestSolutions = () => {
     exit: { opacity: 0, scale: 0.8, rotate: 10, x: 50 },
   };
 
-  // Hover effect for cards
   const hoverEffect = {
     scale: 1.05,
     y: -10,
@@ -83,9 +81,9 @@ const BestSolutions = () => {
   };
 
   const buttonVariants = {
-    hover: { scale: 1.1, backgroundColor: "#7c58ff", color: "#fff" },
+    hover: { scale: 1.1, backgroundColor: "white", color: "black" },
     tap: { scale: 0.9 },
-    selected: { backgroundColor: "#7c58ff", color: "#ffff" },
+    selected: { backgroundColor: "white", color: "black" },
   };
 
   const textVariants = {
@@ -122,10 +120,11 @@ const BestSolutions = () => {
           (item, index) => (
             <motion.h1
               key={index}
+              id="myhover"
               style={{
                 cursor: "pointer",
-                color: nameMatch === item ? "#000" : "#436800",
-                backgroundColor: nameMatch === item ? "#6E44FF" : "transparent",
+                color: nameMatch === item ? "black" : "white",
+                backgroundColor: nameMatch === item ? "white" : "black",
                 padding: "8px 16px",
                 borderRadius: "8px",
               }}

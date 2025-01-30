@@ -78,6 +78,7 @@ const WhychooseUs = () => {
               check2="Brand Creation & Strategy Development"
               check3="Brand Revamp"
               check4="Logo Design & Brand Guidelines Development"
+              linkname="branding"
               imgLink={brandBack}
             />
           </motion.div>
@@ -91,9 +92,10 @@ const WhychooseUs = () => {
             animate="animate"
             exit="exit"
             transition={{ duration: 0.3 }}
-          >
+            >
             <BrandDetail
               mainHeading="“You Dream It, We Make It.”"
+              linkname="web-app-development"
               check1="Website Development"
               check2="Mobile App Development"
               check3="E-commerce Solutions"
@@ -119,6 +121,7 @@ const WhychooseUs = () => {
               check3="Content Marketing"
               check4="Performance Marketing"
               imgLink={connect}
+              linkname="digital-marketing"
               check5="Analytics and Performance Tracking"
             />
           </motion.div>
@@ -139,6 +142,7 @@ const WhychooseUs = () => {
               check2="UI/UX Design"
               check3="Print Design"
               check4="Packaging Design"
+              linkname="creative-designing"
               imgLink={creative}
             />
           </motion.div>
@@ -159,6 +163,7 @@ const WhychooseUs = () => {
               check2="Get Required Services"
               check3="Sit Back & Enjoy Business Growing"
               imgLink={custBackground}
+              linkname="customer-service"
             />
           </motion.div>
         )}
