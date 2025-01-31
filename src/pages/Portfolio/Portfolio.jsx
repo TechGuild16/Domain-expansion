@@ -2,7 +2,6 @@ import React from "react";
 import LetsTalk from "../../components/PortfolioComponent/LetsTalk";
 import "./Portfolio.css";
 const Portfolio = () => {
- 
   return (
     <div className="portfolio">
       <div className="BrandingHerosec container-fluid">
@@ -18,7 +17,7 @@ const Portfolio = () => {
           </div>
         </div>
       </div>
-      
+
       <LetsTalk
         firstText="Let's redefine your brand together"
         secondText="We cover it all"
