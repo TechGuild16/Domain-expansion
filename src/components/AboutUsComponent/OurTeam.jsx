@@ -1,9 +1,12 @@
 import { motion } from "framer-motion";
 import React from "react";
+import Anuja from "../../Assets/Anuja.jpeg";
 import DB from "../../Assets/Dnyaneshwar baride.jpg";
 import ishwar from "../../Assets/Ishwar Mule.png";
 import Ravi from "../../Assets/Ravi.jpg";
 import Suraj from "../../Assets/Suraj-Baride.jpg";
+import Aditya from "../../Assets/adi_subham.jpg";
+import mankrit from "../../Assets/mankrit.jpeg";
 
 const OurTeam = [
   {
@@ -29,6 +32,24 @@ const OurTeam = [
     imgSrc: Ravi,
     title: "Ravi Gaikwad",
     text: "Team Lead - Frontend Developer",
+  },
+  {
+    id: 5,
+    imgSrc: Anuja,
+    title: "Anuja Srivastava",
+    text: "React JS Developer",
+  },
+  {
+    id: 6,
+    imgSrc: mankrit,
+    title: "Mankirat Singh",
+    text: "React JS Developer",
+  },
+  {
+    id: 7,
+    imgSrc: Aditya,
+    title: "Aditya Basantia",
+    text: "React JS Developer",
   },
 ];
 
@@ -61,7 +82,7 @@ const CardComponent = () => {
             src={card.imgSrc}
             className="card-img-top rounded-circle mx-auto d-block mt-3"
             alt={card.title}
-            style={{ width: "140px", height: "140px", objectFit: "cover" }} // Ensures a perfect circle
+            style={{ width: "140px", height: "140px", objectFit: "cover" }}
           />
           <div className="card-body text-white">
             <h5 className="card-title">{card.title}</h5>
