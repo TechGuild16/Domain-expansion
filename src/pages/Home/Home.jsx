@@ -9,6 +9,7 @@ import BestSolutions from "../../components/HomeComponents/BestSolutions";
 import SliderHome from "../../components/HomeComponents/SliderHome";
 import clickSoundFile from "../../Assets/mouseClick.wav";
 import ContactUs from '../ContactUs/ContactUs'
+import ParticlesBackground from "../../components/particlecomponent/ParticlesBackground";
 const Home = () => {
   const [formOpen, setFormOpen] = useState(false);
   const [formData, setFormData] = useState({
@@ -66,8 +67,8 @@ const Home = () => {
 
     emailjs
       .send(
-        "service_oyeu98a", 
-        "template_wrqvgpf", 
+        "service_oyeu98a",
+        "template_wrqvgpf",
         {
           firstName: formData.firstName,
           lastName: formData.lastName,
@@ -98,18 +99,22 @@ const Home = () => {
 
   return (
     <div className="HomePage">
-      {/* Hero Section */}
       <div className="BrandingHerosec container-fluid">
-        <div className="row">
+        <div className="particles-wrapper">
+          <ParticlesBackground />
+        </div>
+        <div className="brandingFirstDiv">
           <motion.p
-            className="outbox"
+            className="outbox mybox"
             initial="hidden"
             animate="visible"
             variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            Think out of the box
+            Think OutSide the box
           </motion.p>
+        </div>
+        <div className="row">
           <div className="col-md-12 d-flex align-items-center justify-content-center">
             <div className="BrandHeading">
               <motion.h2
@@ -163,7 +168,7 @@ const Home = () => {
                 }}
                 whileHover="hover"
               >
-                <button style={{color:"black"}} onClick={handleOpen}>Let's talk</button>
+                <button style={{ color: "white" }} onClick={handleOpen}>Let's talk</button>
               </motion.div>
             </div>
           </div>
@@ -182,9 +187,9 @@ const Home = () => {
               transition={{ type: "spring", stiffness: 120, damping: 12 }}
             >
               <div className="buttonClose">
-              <button onClick={handleClose} className="modal-close-button">
-                &#x2715;
-              </button>
+                <button onClick={handleClose} className="modal-close-button">
+                  &#x2715;
+                </button>
               </div>
               <h2>Let’s put your words to work.</h2>
               <form onSubmit={handleSubmit}>
@@ -277,11 +282,11 @@ const Home = () => {
       <ByTheName />
       <BestSolutions />
       <SliderHome />
-      <div className="essentioaltook">
-        <h1 style={{color:"white"}}>Essential Tools</h1>
+      <div className="essentioaltook" style={{backgroundColor : "black"}}>
+        <h1 style={{ color: "white" }}>Essential Tools</h1>
       </div>
       <div className="contacter">
-      <ContactUs />
+        <ContactUs />
       </div>
     </div>
   );

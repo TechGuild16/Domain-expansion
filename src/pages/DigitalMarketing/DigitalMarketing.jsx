@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import PowerFulBrand from '../../components/BrandingComponents/PowerFulBrand';
 import BrandSolutions from '../../components/BrandingComponents/BrandSolutions';
 import LetsTalk from '../../components/BrandingComponents/LetsTalk';
-
+import ParticlesBackgroundFifth from '../../components/particlecomponent/ParticlesBackgroundFifth'
 const DigitalMarketing = () => {
   // Animation variants for the heading
   const headingVariants = {
@@ -37,9 +37,12 @@ const DigitalMarketing = () => {
   };
 
   return (
-    <div>
+    <div className='digitalMarketing'>
       {/* Hero Section */}
       <div className='BrandingHerosec container-fluid'>
+        <div className="particles-wrapper5">
+        <ParticlesBackgroundFifth />
+        </div>
         <div className="row">
           <div className="col-md-12 d-flex align-items-center justify-content-center">
             <motion.div

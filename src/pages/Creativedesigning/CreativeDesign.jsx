@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import PowerFulBrand from '../../components/BrandingComponents/PowerFulBrand';
 import BrandSolutions from '../../components/BrandingComponents/BrandSolutions';
 import LetsTalk from '../../components/BrandingComponents/LetsTalk';
+import ParticlesBackgroundSixth from '../../components/particlecomponent/ParticlesBackgroundSixth';
 
 const CreativeDesign = () => {
   // Animation variants for the heading
@@ -37,9 +38,12 @@ const CreativeDesign = () => {
   };
 
   return (
-    <div>
+    <div className='creativedesign'>
       {/* Hero Section */}
       <div className='BrandingHerosec container-fluid'>
+        <div className="particles-wrapper6">
+        <ParticlesBackgroundSixth />
+        </div>
         <div className="row">
           <div className="col-md-12 d-flex align-items-center justify-content-center">
             <motion.div

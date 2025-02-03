@@ -9,9 +9,9 @@ import behanceLogo from '../../../../Assets/behance.png'
 import { Link } from 'react-router-dom'
 const BottomFooter = () => {
     return (
-        <div className='container-fluid'>
-            <div className="row">
-                <div className="col-md-6   footerContainerFirst">
+        <div className='container-fluid' >
+            <div className="row" >
+                <div className="col-md-6   footerContainerFirst" >
                     <div className="row gap-3">
                         <div className="col-md-3  footerLinks"><FooterCard logo={instaLogo} platformName="Instagram" platformDesc="Share visually appealing snippets of our latest web projects." /></div>
                         <div className="col-md-3  footerLinks"><FooterCard logo={twitterLogo} platformName="twitter" platformDesc="Tweet about interesting coding challenges you've overcome." /></div>
