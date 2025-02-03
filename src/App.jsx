@@ -25,7 +25,6 @@ import SolCon from "./components/HomeComponents/SolCon.jsx";
 function App() {
   return (
     <div className="App">
-      <div className=" circle-1"></div>
 
       <BrowserRouter>
         <DynamicTitle />

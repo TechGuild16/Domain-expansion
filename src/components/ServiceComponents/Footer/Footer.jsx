@@ -5,7 +5,7 @@ import MarqueeService from '../MarqueeService'
 import BottomFooter from './bottomFooterSection/BottomFooter'
 const Footer = () => {
   return (
-    <div className='FooterSection'>
+    <div className='FooterSection' >
       <div className="footerHeading d-flex align-items-center justify-content-between">
         <div className="">
         <h3 className='uppercase'>Ready to Transform Your Digital<br/> Presence?</h3>

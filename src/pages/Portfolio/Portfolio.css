@@ -1,22 +1,74 @@
-.backgroundColor {
-  background-color: var(--navbarColor);
-}
-.backgroundColor:hover {
-  background-color: var(--btnBackground);
-}
 
+.portfolioheading{
+}
+.portContainer {
+  width: 100vw;
+  height: 72vh;
+}
 .form-control::placeholder {
   text-align: center;
   padding: 4px;
   padding-top: 4px;
 }
-
+.PortfolioShowcase{
+  min-height: 100vh;
+  background-color: black;
+  padding-bottom: 5vw;
+}
+.portfolioHeading{
+  padding-top: 7vw;
+}
+.portfolioHeading h1{
+  color: white;
+  font-weight: 500;
+}
+.portfolioHeading span {
+  background: linear-gradient(90deg, #77ff00, #fff700);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.portfolio-card{
+  width: 100%;
+  background-color: #0e0e0e;
+  border-radius: 1vw;
+  border: 1px solid rgb(69, 69, 69);
+}
+.portfolio-content{
+  padding: 2vw;
+}
+.portfolio-title{
+  color: white;
+}
+.portfolio-description{
+  color: rgb(121, 121, 121);
+}
+.portfolio-button{
+  border: none;
+  background: white;
+  color: black;
+  padding: .5vw 3vw;
+  border-radius: 5px;
+  font-size: 1.4vw;
+}
+.portfolio-button:hover{
+  background-color: rgb(208, 208, 208);
+}
 .showcaseBtn {
   width: 20vw;
 }
 /* General Styling */
 .portfolio {
   min-height: 100vh;
+  position: relative;
+  z-index: 1;
+}
+.particles-wrapper2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;  background: linear-gradient(to right, #38b100, #95be00);
 }
 
 .portfolioHerosec {
@@ -352,7 +404,7 @@
   max-width: 95%;
   height: 70vh;
   border: 1px solid #7dc000;
-  margin: 8vw auto;
+  margin: 0vw auto !important;
   border-radius: 23px;
   box-shadow: 0 24px 28px rgb(0, 0, 0), 0 22px 20px rgba(0, 0, 0, 0.15);
 }
@@ -383,9 +435,19 @@
   .BrandHeading {
     padding-top: 21vw !important;
   }
+  .gapset{
+    gap: 20px !important;
+  }
   .BrandHeading h1 {
     color: #7dc000;
     font-size: 7.5vw !important;
+  }
+  .portfolio-button{
+    font-size: 3.4vw !important;
+    margin-bottom: 1vw;
+  }
+  .portfolio-content{
+    padding: 4vw;
   }
   .BrandHeading p {
     padding-top: 4vw !important;

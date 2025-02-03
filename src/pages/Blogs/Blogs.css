@@ -62,3 +62,284 @@
     font-weight: 500;
 
 }
+.slider{
+    padding-left: 3vw;
+    padding-right: 3vw;
+    padding-top: 6vw;
+}
+
+
+.miniSlider {
+    display: flex;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 0.6vw;
+    border-radius: 15px;
+    flex-wrap: wrap;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3);
+    gap: 1vw;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .category-item {
+    position: relative;
+    padding: 1vw 1.5vw;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 600;
+    text-align: center;
+    color: #bbb;
+    background: rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    overflow: hidden;
+  }
+  
+  .glow {
+    display: block;
+    position: relative;
+    z-index: 2;
+    color: #8f8f8f;
+  }
+  
+  .category-item:hover {
+    transform: scale(1.1) rotate(1deg);
+    background: linear-gradient(90deg, #ffffff, #e0e0e0);
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.6), 0px 0px 30px rgba(255, 255, 255, 0.4);
+  }
+  
+  .category-item:active .wave {
+    animation: waveAnimation 0.6s ease-out forwards;
+  }
+  
+  @keyframes waveAnimation {
+    0% {
+      transform: scale(1);
+      opacity: 0.5;
+    }
+    50% {
+      transform: scale(2);
+      opacity: 0.3;
+    }
+    100% {
+      transform: scale(3);
+      opacity: 0;
+    }
+  }
+  
+  .wave {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    transform: scale(0);
+    z-index: 1;
+    pointer-events: none;
+  }
+  
+  .blogActive {
+    color: #000;
+    background: linear-gradient(90deg, #ffffff, #e0e0e0);
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.8), 0px 0px 40px rgba(255, 255, 255, 0.5);
+    transform: scale(1.12);
+    border: 2px solid rgba(255, 255, 255, 0.8);
+  }
+  
+  .blogNotActive {
+    color: #999;
+    background: rgba(0, 0, 0, 0.5);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+  }
+/* Card Wrapper */
+.blog-Carder {
+    width: 45vw;
+    min-height: 60vh;
+    background-color: rgb(10, 10, 10);
+    border: 1px solid rgb(29, 29, 29);
+    border-radius: 1vw;
+    overflow: hidden;
+    margin: 20px auto;
+    padding: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .blog-Carder:hover {
+    transform: scale(1.03);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  }
+  
+  /* Outer Card Container */
+  .modernBlogCard {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 450px;
+    border-radius: 15px;
+    background: linear-gradient(45deg, rgba(255, 255, 255, 0.05), rgba(0, 0, 0, 0.2));
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    position: relative;
+    transition: all 0.3s ease-out;
+    margin: 0;
+    border: none;
+  }
+  
+  .modernBlogCard:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.4);
+    border-radius: 20px;
+  }
+  
+  /* Image Section */
+  .imageOverlay {
+    width: 100%;
+    height: 55%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px 15px 0 0;
+  }
+  
+  .imageSection {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .modernBlogCard:hover .imageSection {
+    transform: scale(1.1);
+  }
+  
+  /* Content Section */
+  .cardContent {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 45%;
+    color: #fff;
+  }
+  
+  .cardTitle {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #fff;
+    background: linear-gradient(90deg, #ff416c, #ff4b2b);
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-bottom: 10px;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .cardDescription {
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.85);
+    line-height: 1.5;
+    margin-bottom: 20px;
+    transition: color 0.3s ease;
+  }
+  
+  .modernBlogCard:hover .cardDescription {
+    color: rgba(255, 255, 255, 1);
+  }
+  
+  /* Read More Button */
+  .readMoreButton {
+    align-self: flex-start;
+    padding: 12px 24px;
+    font-size: 1.1rem;
+    background: linear-gradient(90deg, #ff416c, #ff4b2b);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .readMoreButton:hover {
+    background: linear-gradient(90deg, #ff4b2b, #ff416c);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  }
+  
+  @media (max-width: 768px) {
+    
+    .modernBlogCard {
+      width: 100%;
+      height: auto;
+    }
+  
+    .imageOverlay {
+      height: 50%;
+    }
+  
+    .cardContent {
+      height: auto;
+      padding: 15px;
+    }
+  
+    .cardTitle {
+      font-size: 1.2rem;
+    }
+  
+    .cardDescription {
+      font-size: 1rem;
+    }
+    .BlogsPage {
+        min-height: 100vh;
+        width: 100vw;
+        padding-top: 28vw;
+    }
+    .outerwrapper{
+        flex-direction: column;
+    }
+    .blogheading h1 {
+        font-size: 13vw;
+    }
+    .blogheading input {
+        width: 62vw;
+        padding: 3vw;
+        font-size: 3.5vw;
+        width: 71vw;
+    }
+    .bloginput button {
+        font-size: 3.5vw !important;
+        padding: 3vw !important;
+        width: 31vw;
+    }
+    .bloginput {
+        margin-top: 6vw;
+    }
+    .category-item {
+        padding: 3vw 9.5vw;
+    }
+    .miniSlider{
+        gap: 2vw;
+        padding: 1.5vw;
+    }
+   
+    .blogDetails p {
+        font-size: 4vw;
+    }
+    .blogDetails {
+        padding-top: 1vw;
+    }
+    .blog-Carder {
+        width: 100vw !important;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .cardTitle {
+      font-size: 1rem;
+    }
+  
+    .cardDescription {
+      font-size: 0.9rem;
+    }
+  }
+  

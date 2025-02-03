@@ -5,13 +5,44 @@
 .homepsan{
     font-weight: 500;
 }
+.selected-h1 {
+  color: black !important;
+}
+
 .BrandingHerosec {
   padding-top: 4vw;
 }
+.brandingFirstDiv{
+  display: flex;
+  justify-content: center;
+  
+}
+.BrandHeading, .brandingFirstDiv {
+  position: relative;
+  z-index: 1; 
+}
+.particles-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;  background: linear-gradient(to right, #6a11cb, #2575fc);
+}
+
+.HomePage {
+  position: relative;
+  z-index: 1;
+}
+
 .outbox{
-    color: #fff;
+    color: #000;
+    background-color: white;
     text-align: center;
-    padding-top: 3vw;
+    margin-top: 4vw;
+    border-radius: 23px;
+    padding: .5vw 3vw;
+    min-width: fit-content;
     text-transform: uppercase;
     font-weight: 500;
 }
@@ -19,11 +50,12 @@
     margin-top: -3vw;
 }
 .whychooseus {
-    padding: 1rem 2rem;
+    padding: 5rem 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-color: black;
   }
   
 
@@ -160,9 +192,13 @@
   display: flex;
   justify-content: center; 
 }
+#homebutton2 button{
+  background-color: white !important;
+  color: black;
+}
 .organization {
   min-height: 70vh;
-  padding: 20px 0;
+  background-color: black;
 }
 
 .organizationHeading {
@@ -178,7 +214,7 @@
 }
 
 .showcaseBox {
-  width: 20vw;
+  width: 100%;  
   height: 23vh;
   overflow: hidden;
   position: relative;
@@ -188,9 +224,6 @@
 
 .companyShowcase {
   margin-top: 4vw;
-  display: flex;
-  flex-wrap: wrap; 
-  justify-content: center;
 }
 
 .showcaseBox img {
@@ -202,6 +235,7 @@
   top: 0;
   left: 0;
 }
+
 .byTheName{
   height: 70vh;
   background-color: #0e0e0e;
@@ -230,6 +264,7 @@
 }
 .bestSolutions{
   min-height: 100vh;
+  background-color: black;
 }
 #homebutton3{
   display: none;
@@ -260,37 +295,37 @@
   cursor: pointer;
 }
 
-.cardContainerSol{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 10px;
-  padding: 2vw;
+.cardContainerSol {
+  padding-top: 2vw; 
+  padding-left :2vw;
 }
-.solutionsCard{
-  width: 17vw;
-  height: 30vh;
+
+.solutionsCard {
+  width: 31vw; 
+  height: 40vh;
   border-radius: 1vw;
   background-color: white;
   display: flex;
-  align-items: end;
+  align-items: flex-end; 
   position: relative;
   overflow: hidden;
 }
-.solutionsCard img{
+
+.solutionsCard img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 1vw;
   filter: brightness(80%);
-  transition: scale .3s ease;
+  transition: scale 0.3s ease;
   cursor: pointer;
 }
-.solutionsCard:hover #solcarimg{
+
+.solutionsCard:hover #solcarimg {
   scale: 1.3;
-  transition: scale .3s ease;
+  transition: scale 0.3s ease;
 }
+
 .contentboxsol{
   position: absolute;
   color: white;
@@ -299,8 +334,8 @@
 .sliderHome{
   min-height: 80vh;
   background-color: #0f0f0f;
-  margin-top: 6vw;
-  margin-bottom: 6vw; 
+  margin-top: 0vw;
+  margin-bottom: 0vw; 
   color: #fff;
   padding: 50px 20px;
   text-align: center;
@@ -447,7 +482,9 @@
   resize: vertical;
 }
 .button button{
-  color: #000 !important;
+  color: #fff;
+  background-color: rgb(30, 19, 75) !important;
+  box-shadow: 0 14px 10px  rgba(0, 0, 0, 0.3);
 }
 .buttonClose button{
   position: absolute;
@@ -777,13 +814,13 @@
   width: 12vw;
 }
   .outbox{
-    padding-top: 9vw;
 }
   .mynavigationbar{
     position: fixed;
     top: 0;
   }
   .BrandHeading h2 {
+   
     font-size: 13vw !important;
 }
 #homebutton button{
@@ -864,7 +901,6 @@
   padding-top: 6vw;
 }
 .organization {
-  margin-top: 11vw !important;
 }
 .organizationHeading h1 {
   font-size: 10vw !important;
@@ -897,7 +933,7 @@ gap: 4px !important;
   flex-direction: column;
 }
 .solutionsCard {
-  width: 89vw !important;
+  width: 97vw !important;
 }
 .contentboxsol {
   position: absolute;

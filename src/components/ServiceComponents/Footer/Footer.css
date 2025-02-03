@@ -1,15 +1,20 @@
 .FooterSection {
   min-height: 100vh;
-  padding: 0vw 2vw;
+  padding: 0vw 0vw;
+  position: relative;
+  z-index: 200;
+  background-color: black;
 }
 .footerHeading {
-  width: 96vw;
+  width: 100vw;
   height: 36.3vh;
   border-radius: 12px;
   background-color: #0f0f0f;
   border: 1px solid rgb(41, 41, 41);
   padding: 2.5vw;
   color: white;
+  position: relative;
+  z-index: 100;
 }
 .footerHeading h3 {
   font-size: 2.5vw;
@@ -33,6 +38,9 @@
   background-color: #0f0f0f;
   border-radius: 12px;
   margin-top: 1vw;
+  
+  position: relative;
+  z-index: 100;
 }
 .footerContainerFirst {
   min-height: 64.26vh;
@@ -159,12 +167,11 @@
 }
 @media (max-width: 576px) {
   .footerHeading {
-    width: 89vw;
+    width: 100vw;
     height: 52vh;
     flex-direction: column;
   }
   .FooterSection {
-    padding: 9vw 6vw;
   }
   .footerHeading h3 {
     font-size: 8.5vw;
@@ -182,8 +189,8 @@
     width: 8vw;
   }
   .footerLinks {
-    width: 88.5vw;
-  }
+    width: 98.5vw;
+}
   .footermarquee {
     margin-top: 4vw;
   }

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion"; // Import Framer Motion
+import Slider from "react-slick"; // Import Slick Slider
 import img1 from "../../Assets/solImg1.png";
 import img2 from "../../Assets/solImg2.png";
 import img3 from "../../Assets/solImg3.png";
@@ -81,15 +82,43 @@ const BestSolutions = () => {
   };
 
   const buttonVariants = {
-    hover: { scale: 1.1, backgroundColor: "white", color: "black" },
-    tap: { scale: 0.9 },
-    selected: { backgroundColor: "white", color: "black" },
+    hover: { scale: 1.1,  },
+    tap: { scale: 0.9 },  
   };
 
   const textVariants = {
     hidden: { opacity: 0, y: 20 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
   };
+
+
+  const sliderSettings = {
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    dots: true,
+    arrows: false,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  };
+
 
   return (
     <div className="bestSolutions">
@@ -118,26 +147,31 @@ const BestSolutions = () => {
       >
         {["All", "CC Solutions", "CD Solutions", "DM Solutions", "WAD Solutions"].map(
           (item, index) => (
-            <motion.h1
+            <motion.div
               key={index}
-              id="myhover"
               style={{
                 cursor: "pointer",
-                color: nameMatch === item ? "black" : "white",
-                backgroundColor: nameMatch === item ? "white" : "black",
                 padding: "8px 16px",
                 borderRadius: "8px",
+                backgroundColor: nameMatch === item ? "white" : "",
               }}
               onClick={() => handleEffect(item)}
               variants={buttonVariants}
               whileHover="hover"
               whileTap="tap"
-              animate={nameMatch === item ? "selected" : ""}
             >
-              {item}
-            </motion.h1>
+              <h1
+                style={{
+                  color: nameMatch === item ? "black !important" : "white",
+                  margin: 0,
+                }}
+              >
+                {item}
+              </h1>
+            </motion.div>
           )
         )}
+
       </motion.div>
 
       <motion.div
@@ -147,25 +181,27 @@ const BestSolutions = () => {
         exit="exit"
       >
         <AnimatePresence>
-          {filteredSolutions.map((item, index) => (
-            <motion.div
-              key={index}
-              variants={cardVariants}
-              initial="hidden"
-              animate="visible"
-              exit="exit"
-              custom={index}
-              whileHover={hoverEffect}
-              layout
-              style={{ position: "relative" }}
-            >
-              <SolutionsCard
-                Highlight={item.Highlight}
-                Title={item.title}
-                imgLink={item.imgLink}
-              />
-            </motion.div>
-          ))}
+          <Slider {...sliderSettings}>
+            {filteredSolutions.map((item, index) => (
+              <motion.div
+                key={index}
+                variants={cardVariants}
+                initial="hidden"
+                animate="visible"
+                exit="exit"
+                custom={index}
+                whileHover={hoverEffect}
+                layout
+                style={{ position: "relative" }}
+              >
+                <SolutionsCard
+                  Highlight={item.Highlight}
+                  Title={item.title}
+                  imgLink={item.imgLink}
+                />
+              </motion.div>
+            ))}
+          </Slider>
         </AnimatePresence>
       </motion.div>
     </div>

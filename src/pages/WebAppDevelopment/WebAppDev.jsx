@@ -5,6 +5,7 @@ import './WebApp.css';
 import PowerFulBrand from '../../components/BrandingComponents/PowerFulBrand';
 import BrandSolutions from '../../components/BrandingComponents/BrandSolutions';
 import LetsTalk from '../../components/BrandingComponents/LetsTalk';
+import ParticlesBackgroundFourth from '../../components/particlecomponent/ParticlesBackgroundFourth';
 
 const WebAppDev = () => {
   const headingVariants = {
@@ -36,9 +37,12 @@ const WebAppDev = () => {
   };
 
   return (
-    <div>
+    <div className='webAppHero'>
       {/* Hero Section */}
       <div className='BrandingHerosec container-fluid'>
+        <div className="particles-wrapper4">
+        <ParticlesBackgroundFourth />
+        </div>
         <div className="row">
           <div className="col-md-12 d-flex align-items-center justify-content-center">
             <motion.div
