@@ -1,9 +1,9 @@
-import React, { useState } from "react";
-import { Link, useLocation } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
+import React, { useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 import domainexpansionlogo from "../../../Assets/domainExpansionLogo.png";
-import './Navbar.css'
+import "./Navbar.css";
 const Navbar = ({ brandName, brandLink }) => {
   const location = useLocation();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -13,10 +13,16 @@ const Navbar = ({ brandName, brandLink }) => {
   };
 
   const navLinks = [
-    { path: "/Solutions", label: "SOLUTIONS", className: "solutions", dropdown: true },
+    {
+      path: "/Solutions",
+      label: "SOLUTIONS",
+      className: "solutions",
+      dropdown: true,
+    },
     { path: "/Portfolio", label: "PORTFOLIO", className: "portfolio" },
     { path: "/About", label: "ABOUT", className: "about" },
     { path: "/Blogs", label: "BLOGS", className: "blogs" },
+    { path: "/Projects", label: "PROJECTS", className: "projects" },
     { path: "/ContactUs", label: "CONTACT US", className: "contact" },
   ];
 
@@ -25,7 +31,10 @@ const Navbar = ({ brandName, brandLink }) => {
   };
 
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark sticky-top py-2" id="myNavbar">
+    <nav
+      className="navbar navbar-expand-lg navbar-dark bg-dark sticky-top py-2"
+      id="myNavbar"
+    >
       <div className="container-fluid">
         {/* Brand Logo */}
         <Link className="navbar-brand" to={brandLink}>
@@ -55,7 +64,9 @@ const Navbar = ({ brandName, brandLink }) => {
               link.dropdown ? (
                 <li className="nav-item dropdown" key={link.path}>
                   <a
-                    className={`nav-link dropdown-toggle ${isActive(link.path)}`}
+                    className={`nav-link dropdown-toggle ${isActive(
+                      link.path
+                    )}`}
                     href="#"
                     id="solutionsDropdown"
                     role="button"
@@ -64,7 +75,10 @@ const Navbar = ({ brandName, brandLink }) => {
                   >
                     {link.label}
                   </a>
-                  <ul className="dropdown-menu dropdown-menu-dark" aria-labelledby="solutionsDropdown">
+                  <ul
+                    className="dropdown-menu dropdown-menu-dark"
+                    aria-labelledby="solutionsDropdown"
+                  >
                     <li>
                       <Link className="dropdown-item" to="/branding">
                         Branding

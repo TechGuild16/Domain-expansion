@@ -19,7 +19,7 @@ const OurTeam = [
     id: 2,
     imgSrc: ishwar,
     title: "Ishwar Mule",
-    text: "WordPress Designer",
+    text: "CO-Founder",
   },
   {
     id: 3,

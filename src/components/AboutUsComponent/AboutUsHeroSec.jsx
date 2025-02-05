@@ -1,29 +1,23 @@
 import { motion } from "framer-motion";
 import React from "react";
+import ParticleBackgroundNext from "../../components/particlecomponent/ParticleBackgroundNext";
 
 const AboutUHeroSec = () => {
   return (
     <div className="BrandingHerosec container-fluid">
-      <div className="row">
-        <div className="col-md-12 d-flex align-items-center justify-content-center">
-          <div className="BrandHeading">
-            <motion.h1
-              initial={{ opacity: 0, y: -50 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1, ease: "easeOut" }}
-            >
-              Think Outside The Box
-              <br />
-              is not just our tagline
-            </motion.h1>
-            <motion.p
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.5, duration: 1, ease: "easeOut" }}
-            >
-              It’s our philosophy. We approach every project with innovation and
-              creativity, pushing the boundaries to achieve exceptional results.
-            </motion.p>
+      <div className="BrandingHerosec container-fluid portfolioherosec">
+        <div className="particles-wrapper2">
+          <ParticleBackgroundNext />
+        </div>
+        <div className="row portContainer">
+          <div className="col-md-12 d-flex align-items-center justify-content-center">
+            <div className="BrandHeading portfolioheading">
+              <h1>A Glimpse Into Our Domain</h1>
+              <p>
+                Design creates culture. Culture shapes values. Values determine
+                the future.
+              </p>
+            </div>
           </div>
         </div>
       </div>
