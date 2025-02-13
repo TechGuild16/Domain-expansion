@@ -17,6 +17,7 @@ const Navbar = ({ brandName, brandLink }) => {
     { path: "/Portfolio", label: "PORTFOLIO", className: "portfolio" },
     { path: "/About", label: "ABOUT", className: "about" },
     { path: "/Blogs", label: "BLOGS", className: "blogs" },
+    { path: "/Projects", label: "PROJECTS", className: "projects" },
     { path: "/ContactUs", label: "CONTACT US", className: "contact" },
   ];
 

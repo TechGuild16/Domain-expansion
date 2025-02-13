@@ -21,6 +21,7 @@ import CCSolution from "./components/HomeComponents/CCSolution.jsx";
 import DMSolution from "./components/HomeComponents/DMSolution.jsx";
 import WADSolutions from "./components/HomeComponents/WADSolutions.jsx";
 import SolCon from "./components/HomeComponents/SolCon.jsx";
+import Project from "./pages/Project/Project.jsx";
 
 function App() {
   return (
@@ -39,6 +40,7 @@ function App() {
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/About" element={<About />} />
           <Route path="/Blogs" element={<Blog />} />
+          <Route path="/Projects" element={<Project />} />
           <Route path="/ContactUs" element={<ContactUs />} />
           <Route path="/branding" element={<Branding />} />
           <Route path="/web-app-development" element={<WebAppDev />} />

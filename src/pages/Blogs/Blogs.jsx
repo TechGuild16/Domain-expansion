@@ -44,9 +44,9 @@ const Blogs = () => {
         </div>
       </div>
       <div className="blogCards container-fluid">
-        <div className="row gap-4 px-5 pt-4 ">
-          <div className="col-md-4 blog-Carder"><BlogCard imglink={blogImg1} /></div>
-          <div className="col-md-4 blog-Carder"><BlogCard imglink={blogImg2} /></div>
+        <div className="row  px-5 pt-4 ">
+          <div className="col-md-6 "><BlogCard imglink={blogImg1} /></div>
+          <div className="col-md-6"><BlogCard imglink={blogImg2} /></div>
         </div>
       </div>
     </div>

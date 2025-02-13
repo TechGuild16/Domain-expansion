@@ -4,7 +4,6 @@ import "./Portfolio.css";
 import ParticleBackgroundNext from "../../components/particlecomponent/ParticleBackgroundNext";
 import PortfolioShowcase from "../../components/PortfolioComponent/PortfolioShowcase";
 const Portfolio = () => {
- 
   return (
     <div className="portfolio">
       <div className="BrandingHerosec container-fluid portfolioherosec">
