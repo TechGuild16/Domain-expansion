@@ -1,0 +1,591 @@
+
+    .branding {
+        min-height: 100vh;
+    }
+    .brandingHead{
+        position: relative;
+        z-index: 1;
+    }
+    .BrandingHerosec {
+        position: relative;
+        width: 100%;
+        min-height: 100vh;
+        overflow: hidden;
+        background-color: transparent; 
+      }
+    .BrandHeading {
+        text-align: center;
+        padding-top: 7vw;
+    }
+
+    .BrandHeading h1 {
+        color: #fff;
+        font-size: 6vw;
+        line-height: 1;
+        font-weight: bold;
+        text-align: center;
+        text-shadow: 
+            0px 15px 5px #30303037,
+            0px 15px 10px #12121236;
+    }
+
+    .BrandHeading p {
+        color: #fff;
+        
+        padding-top: 3vw;
+        font-size: 1.5vw;
+        font-weight: 500;
+    }
+
+    .AboutBrand {
+        padding-left: 3vw;
+        padding-right: 3vw;
+        padding-top: 13vw;
+    }
+
+    .AboutBrand :nth-child(1) h1 {
+        color: #fff;
+        font-size: 4vw;
+    }
+
+    .boldpart {
+        font-weight: 900;
+        color: #ffff;
+    }
+
+    .dot {
+        background-color: #ffff;
+        width: 1vh;
+        height: 1vh;
+    }
+
+    .line {
+        width: 8vw;
+        height: 1vh;
+        background-color: #fff;
+        border-radius: 23px;
+    }
+
+    .detailBrand {
+        color: #ffff;
+        font-size: 1.25vw;
+        font-weight: 500;
+    }
+
+    .powerfulbrand {
+        min-height: 100vh;
+        background-color: black;
+        position: relative;
+        z-index: 100;
+    }
+
+    .powerfulBrandHeading {
+        text-align: center;
+        padding-top: 7vw;
+    }
+
+    .powerfulBrandHeading h1 {
+        color: #fff;
+    }
+
+    .powerfulBrandHeading span {
+        font-weight: 900;
+        color: #fff;
+    }
+
+.brandBox {
+    width: 21vw;
+    height: 64vh;
+    perspective: 1000px; 
+    position: relative;
+    overflow: hidden;
+    z-index: 10;
+}
+
+.cardContent {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transform: rotateY(0deg);
+    transition: transform 0.8s ease, box-shadow 0.3s ease;
+}
+
+.cardContent:hover {
+    transform: rotateY(180deg);
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.2);
+}
+
+.brandBox:hover .cardContent {
+    transform: rotateY(180deg);
+}
+
+.cardFront, .cardBack {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.cardFront {
+    z-index: 2;
+}
+
+.cardBack {
+    z-index: 1;
+    transform: rotateY(180deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #7dc000;
+    color: white;
+    font-size: 1.5vw;
+    font-weight: bold;
+    opacity: 0;
+    transform: rotateY(180deg) translateZ(20px) scale(0.8); 
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.brandBox:hover .cardBack {
+    opacity: 1;
+    transform: rotateY(180deg) translateZ(20px) scale(1) rotateY(10deg);
+}
+
+.cardBack h1 {
+    transition: transform 0.8s ease;
+    transform: rotateX(90deg); 
+}
+
+.brandBox:hover .cardBack h1 {
+    transform: rotateX(0deg);  
+}
+
+.brandBox img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    scale: 1.1;
+    transition: transform 0.3s ease;
+}
+
+.brandBox:hover img {
+    transform: scale(1.1);
+}
+
+.caseStudy{
+    min-height: 100vh;
+    background-color: black;
+    position: relative;
+    z-index: 10;
+}
+.Caseheading{
+    text-align: center;
+    padding-top: 11vw;
+}
+.Caseheading h1{
+    color: #fff;
+    position: relative;
+    z-index: 150;
+    font-size: 4vw;
+}
+.webAppHero{
+    position: relative;
+    z-index: 1;
+}
+.digitalMarketing{
+    position: relative;
+    z-index: 1;
+}
+.creativedesign{
+    position: relative;
+    z-index: 1;
+}
+.particles-wrapper4{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;  background: linear-gradient(to right, #0026b1, #0092be);
+}
+.particles-wrapper5{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;  background: linear-gradient(to right, #b10000, #be6500);
+}
+.particles-wrapper6{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;  background: linear-gradient(to right, #00b11b, #00be6f);
+}
+.Caseheading h1::before{
+    content: "Case Study";
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,0%);
+    font-size: 8vw;
+    font-weight: 900;
+    top: -120%;
+    color: transparent; 
+    -webkit-text-stroke: 2px #fff; 
+    text-stroke: 2px #7dc000;
+}
+.whypickus{
+    max-width: 90%;
+    margin: auto;
+    margin-top: 10vw;
+    min-height: 50vh;
+    border-radius: 23px;
+    background-color: #161616;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+.whypickus h1{
+    padding-top: 2vw;
+    color: #fff;
+   
+}
+.whypickus span{
+    color: #fff;
+    font-weight: 900;
+}
+.whypickus p{
+    color: #b9b9b9;
+    padding: 4vw;
+    font-weight: 500;
+    font-size: 1.4vw;
+}
+.brandSolutions{
+    min-height: 100vh;
+    background-color: black;
+    position: relative;
+    z-index: 10;
+}
+.solutionsHeading{
+    text-align: center;
+    padding-top: 8vw;
+}
+.solutionsHeading h1{
+    color: #fff;
+    font-size: 4vw;
+}
+.solutionsHeading span{
+    font-weight: 900;
+    color: #ffff;
+}
+.solutionsHeading p{
+    color: #b8b8b8;
+    padding-top: 1vw;
+    font-size: 1.5vw;
+    font-weight: 500;
+}
+.animatedPhotosdiv {
+    max-width: 97%;
+    margin: 4vw auto;
+    border-radius: 23px;
+    background-color: white;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden; 
+}
+
+.firstdiv {
+    width: 50vw;
+    height: 100%;
+    border-right: 1px solid white;
+    position: relative;
+}
+
+.blackopacdiv {
+    width: 100%;
+    position: absolute;
+    bottom: -30%;
+    height: 42vh;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 2vw;
+    justify-content: center;
+    background: linear-gradient(to bottom, transparent, rgb(0, 0, 0)); 
+    z-index: 1; 
+    opacity: 0; 
+    transition: all 0.5s ease;
+}
+
+.blackopacdiv h1 {
+    color: white;
+    font-size: 2vw;
+    font-weight: bold;
+    text-align: center;
+    position: relative; 
+    z-index: 2; 
+}
+
+.secondDiv, .thirdDiv, .fourthDiv {
+    height: 100%;
+    border-right: 1px solid white;
+    width: 16vw;
+    transition: width 0.5s ease; 
+    position: relative;
+}
+
+.firstdiv img, .secondDiv img, .thirdDiv img, .fourthDiv img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.firstdiv img {
+    border-top-left-radius: 18px;
+    border-bottom-left-radius: 18px;
+}
+
+.fourthDiv img {
+    border-top-right-radius: 18px;
+    border-bottom-right-radius: 18px;
+}
+
+.secondDiv:hover, .thirdDiv:hover, .fourthDiv:hover {
+    width: 50vw; 
+}
+.firstdiv .blackopacdiv{
+    bottom: 0;
+    opacity: 1;
+}
+.secondDiv:hover .blackopacdiv,
+.thirdDiv:hover .blackopacdiv,
+.fourthDiv:hover .blackopacdiv {
+    bottom: 0; 
+    opacity: 1; 
+}
+ .secondDiv.expanded, .thirdDiv.expanded, .fourthDiv.expanded {
+    width: 50vw; 
+}
+.letsTalk{
+    min-height: 100vh;
+    background-color: black;
+    position: relative;
+    z-index: 10;
+}
+.particles-wrapper3{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;  background: linear-gradient(to right, #b1003b, #be007f);
+ }
+
+.talkDiv {
+    max-width: 95%;
+    height: 70vh;
+    border: 1px solid #fff;
+    margin: 0vw auto !important;
+    border-radius: 23px;
+    box-shadow: 0 24px 28px rgb(0, 0, 0), 0 22px 20px rgba(0, 0, 0, 0.15); 
+}
+.talkDivheading{
+    text-align: center;
+    padding-top: 4vw;
+    color: #fff;
+}
+.talkDivheading p{
+    padding-top: 4vw;
+    color: #b1b1b1;
+    font-weight: 500;
+    font-size: 1.5vw;
+}
+.button{
+    padding-top: 4vw;
+}
+.button button{
+    background-color: #fff;
+    border: none;
+    padding: 1vw 3vw 1vw 3vw;
+    border-radius: 23px;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 900;
+    font-size: 1.5vw;
+}
+@media screen and (max-width: 600px){
+    .BrandingHerosec{
+        padding-top: 21vw !important;
+    }
+    
+    .BrandHeading {
+        padding-top: 21vw !important;
+    }
+    .BrandHeading h1 {
+        font-size: 7.5vw !important;
+    }
+    .BrandHeading p {
+        padding-top: 4vw !important;
+        font-size: 2.5vw !important;
+    }
+    .AboutBrand :nth-child(1) h1 {
+        font-size: 7vw !important;
+    }
+    .detailBrand {
+        font-size: 3vw !important;
+    }
+    .powerfulBrandHeading h1 {
+        font-size: 7.5vw !important;
+    }
+    .AboutBrand {
+        padding-top: 29vw !important;
+    }
+    .powerfulBrandHeading {
+        padding-top: 23vw !important;
+    }
+    .myflexrow{
+        display: grid !important;
+        grid-template-columns: 1fr 1fr !important;
+        padding: 6vw !important;
+    }
+    .brandBox {
+        width: 45vw !important;
+        height: 49vh !important;
+    }
+    .caseStudy{
+        margin-top: 0vw !important;
+    }
+    .Caseheading h1 {
+        font-size: 8vw !important;
+    }
+    .Caseheading h1::before {
+        font-size: 8vw;
+        top: -57%;
+        -webkit-text-stroke: unset;
+    }
+    .whypickus h1 {
+        font-size: 6vw !important;
+    }
+    .whypickus{
+        padding: 5vw;
+    }
+    .whypickus p {
+        font-size: 2.4vw !important;
+    }
+    .solutionsHeading h1 {
+        font-size: 7vw !important;
+    }
+    .solutionsHeading p {
+        font-size: 3.5vw !important;
+    }
+    .animatedPhotosdiv{
+        flex-direction: column;
+    }
+    .firstdiv {
+        width: 98vw !important;
+        height: 39vh !important;
+    }
+    .secondDiv {
+        width: 98vw !important;
+        height:  39vh  !important;
+    }
+    .thirdDiv {
+        width: 98vw !important;
+        height: 39vh  !important;
+    }
+    .fourthDiv {
+        width: 98vw !important;
+        height:  39vh   !important;
+    }
+    .blackopacdiv h1 {
+        color: white;
+        font-size: 5vw !important;
+    }
+    .animatedPhotosdiv {
+        max-width: 87% !important;
+        min-height: 156vh !important;
+    }
+    .secondDiv .blackopacdiv,
+.thirdDiv .blackopacdiv,
+.fourthDiv .blackopacdiv {
+    bottom: 0; 
+    opacity: 1; 
+}
+.talkDiv {
+    max-width: 87% !important;
+    height: 55vh;
+}
+.talkDivheading h1{
+    font-size: 7vw;
+}
+.talkDivheading p {
+    padding-top: 5vw;
+    font-size: 3.5vw;
+}
+.button button {
+    font-size: 5.5vw ;
+}
+}
+@media screen and (max-width : 400px) {
+    .BrandHeading h1 {
+        font-size: 13.5vw !important;
+    }
+    .BrandHeading p {
+        font-size: 6.5vw !important;
+    }
+    .AboutBrand :nth-child(1) h1 {
+        font-size: 12vw !important;
+    }
+    .line {
+        width: 23vw !important;
+    }
+    .detailBrand {
+        font-size: 6.5vw !important;
+    }
+    .powerfulBrandHeading h1 {
+        font-size: 10.5vw !important;
+    }
+    .myflexrow {
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+    }
+    .brandBox {
+        width: 90vw !important;
+        height: 49vh !important;
+    }
+    .Caseheading h1 {
+        font-size: 12vw !important;
+    }
+    .Caseheading h1::before {
+        font-size: 12vw;
+        top: -44%;
+        width: 100%;
+    }
+    .solutionsHeading {
+        padding-top: 26vw !important;
+    }
+    .whypickus h1 {
+        font-size: 9vw !important;
+    }
+    .whypickus p {
+        font-size: 4.4vw !important;
+    }
+    .solutionsHeading h1 {
+        font-size: 11vw !important;
+    }
+    .solutionsHeading p {
+        font-size: 4.5vw !important;
+    }
+    .talkDivheading h1 {
+        font-size: 11vw !important;
+    }
+    .talkDivheading p {
+        padding-top: 5vw;
+        font-size: 5.5vw;
+    }
+    .talkDiv {
+        max-width: 87% !important;
+        height: 61vh;
+    }
+}

@@ -1,0 +1,140 @@
+.SuccessStoriesDiv{
+    min-height: 100vh;
+    margin-top: 4vw;
+    margin-right: 1.5vw;
+}
+.SucessCardDiv{
+    max-width: 96vw;
+    border-radius: 1vw;
+    margin:1vw auto;
+    padding-top: 2vw;
+    padding-left: 3.5vw;
+    min-height: 40.81vh;
+    border: 4px solid var(--navbarColor);
+    padding-bottom: 3vw;
+}
+.firstSuccessDiv{
+    width: 43vw;
+    min-height: 35.56vh;
+    background-color: var(--navbarColor);
+    border-radius: 12px;
+    padding: 2vw
+}
+.secondSucessDiv{
+    width: 49.64vw;
+    margin-left: 3.5vw;
+    min-height: 20vh;
+}
+.labelIndustry{
+    background-color: #292929;
+    border-radius: 53px;
+    padding-left: 22px;
+    padding-right: 22px;
+    padding-top: 4px;
+    min-width: fit-content;
+    padding-bottom: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 2vw;
+    font-size: 1vw;
+}
+.industrycolor{
+    color: var(--servicesText);
+}
+.industrycolor2{
+    color: #9c9c9c;
+}
+.successButtons{
+    border: none;
+    background-color: var(--navbarColor);
+    color: #9c9c9c;
+    font-weight: 500;
+    padding: 1vw;
+    border-radius: 12px;
+}
+.uitilityBtn{
+    background-color: var(--secondaryColor);
+    color: #000;
+}
+.successSolutions{
+    background-color: var(--navbarColor);
+    width: 45vw;
+    margin-top: 1vw;
+    border-radius: 12px;
+    padding: 1vw;
+}
+.successSolutions h1{
+    color: #fff;
+    font-weight: 400;
+    font-size: 2vw;
+}
+.successSolutions p{
+    color: var(--paraText);
+}
+@media (max-width: 576px) {
+    .OurServiceHeading h1 {
+        font-size: 4vw;
+        padding-left:2vw;
+    }
+    .OurServiceHeading :nth-child(2) img{
+        width: 8vw;
+    }
+    .text-adjusted {
+        padding-right: 2vw;
+        font-size: 3.3vw;
+    }
+    .firstSuccessDiv {
+        width: 83vw;
+        min-height: 15.56vh;
+    }
+    .industryUitldiv{
+        flex-direction: column;
+        
+    }
+    .industrycolor2{
+        font-size: 3vw;
+    }
+    .industrycolor{
+        font-size: 3vw;
+    }
+    .labelIndustry{
+        align-self: start;
+    }
+    .SucessCardDiv {
+        padding-left: 2.5vw;
+        border-radius: 6vw;
+    }
+    .serviceCTA :nth-child(2){
+        padding-right: 2vw;
+    }
+    .OurServiceHeading{
+        border: none;
+        margin-top: 1vw;
+    }
+    .firstSuccessDiv{
+        padding-bottom: 4vw;
+    }
+    .successSolutions {
+        width: 82vw;
+        margin-top: 4vw;
+        padding: 3vw;
+    }
+    .secondSucessDiv {
+        margin-left: 0.5vw;
+    }
+    .successSolutions h1 {
+        font-size: 4vw;
+    }
+    .successButtons {
+        font-size: 3vw;
+        padding-right: 4vw;
+        padding-left: 4vw;
+    }
+    .testimonialdiv h4 {
+        font-size: 2.5vw;
+        padding-right: 3vw;
+    }
+    
+}

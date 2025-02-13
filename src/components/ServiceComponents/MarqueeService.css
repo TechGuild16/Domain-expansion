@@ -1,0 +1,39 @@
+.marqueeContainer {
+  white-space: nowrap;
+  overflow: hidden;
+  height: 7vh;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1vw;
+  gap: 10px;
+}
+
+.marqueeContainer .content {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: white;
+  animation: marqueeAnimation 20s linear infinite;
+}
+
+.dot {
+  width: 1vh;
+  height: 1vh;
+  border-radius: 50%;
+  background-color: var(--secondaryColor);
+}
+
+@keyframes marqueeAnimation {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+@media (max-width: 576px) {
+  .marqueeContainer {
+    height: 10vh;
+    margin-bottom: 3vw;
+  }
+}

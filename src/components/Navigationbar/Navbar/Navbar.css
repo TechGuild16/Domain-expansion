@@ -1,0 +1,42 @@
+
+#myNavbar {
+  border-bottom: 2px solid #fff !important; 
+  background-color: rgba(0, 0, 0, 0.283) !important;
+  backdrop-filter: blur(5px) !important;
+  position: fixed !important;
+  width: 100%;
+}
+
+.nav-link {
+  font-weight: 500;
+  transition: all 0.3s ease;
+  margin: 0 10px; 
+}
+
+.nav-link:hover {
+  color: #fff !important;
+}
+
+.nav-link.active {
+  color: #fff !important; 
+}
+
+.dropdown-item:hover {
+  background-color: #fff; 
+  color: black !important;
+}
+.dropdown-menu{
+  background-color: rgba(0, 0, 0, 0.283) !important;
+  backdrop-filter: blur(5px) !important;
+}
+.navbar-brand img {
+  max-height: 40px; 
+  scale: 4;
+  padding-left: 2vw;
+}
+@media screen and (max-width: 600px){
+  .navbar-brand img {
+    padding-left: 6vw;
+    scale: 3.5;
+  }
+}
