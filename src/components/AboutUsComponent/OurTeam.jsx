@@ -75,7 +75,7 @@ const CardComponent = () => {
       {OurTeam.map((card) => (
         <div
           className="card text-center shadow-lg p-3 bg-black border border-white"
-          style={{ width: "18rem" }}
+          style={{ width: "18rem", height: "60vh" }}
           key={card.id}
         >
           <img

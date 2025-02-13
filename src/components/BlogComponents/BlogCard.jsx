@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 const BlogCard = ({ imglink }) => {
   return (
     <motion.div 
-      className="modernBlogCard" 
+      className="modernBlogCard " 
       whileHover={{ scale: 1.05 }} 
       whileTap={{ scale: 0.95 }}
       transition={{ duration: 0.3 }}
